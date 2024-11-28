@@ -11,10 +11,12 @@
               <RouterLink to="/">Home</RouterLink>
             </li>
             <li>
-              <RouterLink to="/about">About</RouterLink>
+              <a href="#about">About</a>
+              <!-- <RouterLink to="/about">About</RouterLink> -->
             </li>
             <li>
-              <RouterLink to="/services">Services</RouterLink>
+              <a href="#services">Services</a>
+              <!-- <RouterLink to="/services">Services</RouterLink> -->
             </li>
             <li>
               <RouterLink to="/team">Team</RouterLink>
@@ -43,7 +45,7 @@
               <RouterLink to="/">Home</RouterLink>
             </li>
             <li>
-              <a href="#aboutus">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
               <a href="#services">Services</a>
