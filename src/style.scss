@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--black);
+}
+
+:root {
+  --white: #ffffff;
+  --red: #ff0000;
+  --dark-red: #b30000;
+  --light-red: #ff6666;
+  --black: #161515;
+  --gray: #d3d3d3;
+  --light-gray: #f2f2f2;
+  --green: #008000;
+  --dark-green: #006400;
+  --light-green: #90ee90;
+  --borderRadius: 0.7rem;
+}

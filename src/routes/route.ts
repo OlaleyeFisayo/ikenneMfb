@@ -10,7 +10,7 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         name: "home",
-        path: "home",
+        path: "",
         component: () => import("../pages/Index.vue"),
       },
     ],
