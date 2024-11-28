@@ -92,7 +92,7 @@
         <div class="our-links">
           <h1>Our Links</h1>
           <ul class="footer-link">
-            <li><RouterLink to="/home">Home</RouterLink></li>
+            <li><RouterLink to="/">Home</RouterLink></li>
             <li><RouterLink to="/about">About Us</RouterLink></li>
             <li><RouterLink to="/service">Services</RouterLink></li>
             <li><RouterLink to="/blog">Blog</RouterLink></li>
@@ -148,26 +148,12 @@ import {
   Twitter,
   X,
 } from "lucide-vue-next";
-import { onMounted, onUnmounted, ref, watch } from "vue";
+import { ref } from "vue";
 
 const menu = ref(false);
 const toggleMenu = () => {
   menu.value = !menu.value;
 };
-// watch(
-//   () => menu.value,
-//   (newValue) => {
-//     if (newValue) {
-//       document.body.classList.add(".no-scroll");
-//     } else {
-//       document.body.classList.remove(".no-scroll");
-//     }
-//   },
-// );
-
-// onMounted(() => {
-//   document.body.classList.remove(".no-scroll");
-// });
 </script>
 
 <style scoped lang="scss">

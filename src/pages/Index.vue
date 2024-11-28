@@ -78,8 +78,6 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
-import AppButton from "../components/app-button.vue";
 import AppCard from "../components/app-card.vue";
 </script>
 
