@@ -1,5 +1,17 @@
-.home-page {
+.content {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  & > .title {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: var(--dark-green);
+    text-transform: uppercase;
+  }
 }
+
 .welcome-section {
   width: 100%;
   padding: 2rem;
@@ -33,6 +45,14 @@
     .greeting {
       color: var(--dark-green);
       font-size: 2rem;
+
+      @media (max-width: 560px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 360px) {
+        font-size: 0.85rem;
+      }
     }
 
     .bank-name {
@@ -40,6 +60,14 @@
       max-width: 500px;
       width: 100%;
       color: var(--white);
+
+      @media (max-width: 560px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 360px) {
+        font-size: 1.5rem;
+      }
     }
 
     .buttons {
@@ -61,7 +89,11 @@
 
 .about-section {
   width: 100%;
-  padding: 2rem;
+  padding: 4rem 2rem 2rem;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  background-color: var(--white);
+  margin-top: -4rem;
 
   .content {
     display: grid;
@@ -74,18 +106,20 @@
     }
 
     .img-side {
-      height: 500px;
-      max-width: 500px;
+      height: 600px;
       width: 100%;
       margin: 0 auto;
+      overflow: hidden;
+      border-radius: var(--borderRadius);
 
       @media (max-width: 700px) {
-        height: 400px;
+        height: 300px;
       }
 
       img {
         width: 100%;
         height: 100%;
+        object-fit: fill;
       }
     }
 
@@ -94,6 +128,7 @@
         margin-top: 1rem;
         font-size: 2rem;
         margin-bottom: 2rem;
+        color: var(--dark-green);
 
         @media (max-width: 700px) {
           text-align: center;
@@ -101,9 +136,11 @@
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         max-width: 450px;
         width: 100%;
+        letter-spacing: 1px;
+        font-weight: 400;
 
         @media (max-width: 700px) {
           text-align: center;
@@ -124,15 +161,6 @@
     gap: 1.5rem;
 
     .mission-vision {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 2rem;
-      column-gap: 2rem;
-      justify-content: space-between;
-      @media (max-width: 700px) {
-        grid-template-columns: 1fr;
-      }
-
       div {
         .title {
           font-size: 1.7rem;
@@ -155,8 +183,133 @@
   }
 }
 
-.content {
-  max-width: 1440px;
+.our-products {
   width: 100%;
-  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--black);
+  color: var(--white);
+
+  .content {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 700px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem;
+    }
+    .left-section {
+      .details {
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+
+        .title {
+          font-size: 1.2rem;
+          color: var(--white);
+          text-align: right;
+          @media (max-width: 700px) {
+            text-align: center;
+          }
+        }
+        .subtitle {
+          text-align: right;
+          @media (max-width: 700px) {
+            text-align: center;
+          }
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: right;
+          @media (max-width: 700px) {
+            justify-content: center;
+          }
+        }
+
+        .button {
+          background: var(--dark-green);
+          color: var(--white);
+          padding: 1rem;
+          display: block;
+          width: fit-content;
+          font-weight: 700;
+          text-decoration: none;
+          border-radius: var(--borderRadius);
+
+          &:hover {
+            background: var(--green);
+          }
+        }
+      }
+    }
+
+    .right-section {
+      width: 100%;
+      padding: 0 1rem;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @media (max-width: 700px) {
+          align-items: center;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          @media (max-width: 700px) {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  width: 100%;
+  padding: 2rem;
+
+  .content {
+    .title {
+      text-align: center;
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.gallary {
+  width: 100%;
+  padding: 2rem;
+
+  .content {
+    .title {
+      text-align: center;
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+
+    .splide {
+      .img-container {
+        height: 200px;
+        border-radius: var(--borderRadius);
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }

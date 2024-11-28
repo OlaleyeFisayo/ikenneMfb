@@ -28,6 +28,13 @@ defineProps({
 .app-card {
   box-shadow: var(--boxShadow);
   border-radius: var(--borderRadius);
+  border: 1px solid var(--gray);
+  user-select: none;
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .text-side {
@@ -43,10 +50,15 @@ defineProps({
     color: var(--gray2);
     margin-top: 1rem;
     font-size: 1rem;
+    font-weight: 600;
   }
 
   ul {
     color: var(--gray2) !important;
+
+    li {
+      font-weight: 700 !important;
+    }
   }
 }
 </style>

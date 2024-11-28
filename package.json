@@ -10,6 +10,7 @@
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "lucide-vue-next": "^0.462.0",
     "prettier": "^3.4.1",
     "vue": "^3.5.13",
