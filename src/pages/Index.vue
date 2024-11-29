@@ -27,7 +27,7 @@
     </section>
     <section class="company-values">
       <div class="content">
-        <AppGrid class="mission-vision" :grid="2">
+        <div class="mission-vision" :grid="2">
           <AppCard
             title="Mission"
             subtitle="To offer demand-driven microfinance services to microenterpreneurs
@@ -42,7 +42,7 @@
               sector thus bridging the existing gap and ultimately create
               wealth, alleviate poverty and reduce unemployment in the sector."
           />
-        </AppGrid>
+        </div>
       </div>
     </section>
     <section class="our-products">
