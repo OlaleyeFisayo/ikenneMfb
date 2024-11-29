@@ -111,7 +111,6 @@
 <script setup lang="ts">
 import AppCard from "../components/app-card.vue";
 import AppCard2 from "../components/app-card2.vue";
-import AppGrid from "../components/app.grid.vue";
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import slider1 from "../assets/imgs/slider1.jpeg";
 import slider2 from "../assets/imgs/slider2.jpeg";
@@ -120,16 +119,11 @@ import slider4 from "../assets/imgs/slider4.jpeg";
 import slider5 from "../assets/imgs/slider5.jpeg";
 import clientPhoto from "../assets/imgs/DSC_3160.jpg";
 import {
-  Baby,
-  Book,
   Briefcase,
-  Calendar,
   DollarSign,
   FileText,
   PiggyBank,
-  Send,
   Target,
-  Users,
 } from "lucide-vue-next";
 import AppButton from "../components/app-button.vue";
 
