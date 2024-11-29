@@ -16,6 +16,7 @@
   border: none;
   cursor: pointer;
   transition: 300ms ease-in-out;
+  font-size: var(--smallFontSize);
 
   &:hover {
     background: var(--hoverBlue);

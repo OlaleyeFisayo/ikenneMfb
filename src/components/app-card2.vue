@@ -37,8 +37,8 @@ defineProps({
   justify-content: space-between;
 
   .text-side {
-    margin-bottom: 5rem;
-    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: var(--smallFontSize);
     position: relative;
 
     &::before {
@@ -63,18 +63,19 @@ defineProps({
   .client-details {
     display: grid;
     grid-template-columns: 0.2fr 0.8fr;
-    gap: 1rem;
+    gap: 0.2rem;
     align-items: center;
 
     .img-container {
-      width: 70px;
-      height: 70px;
+      width: 65px;
+      height: 65px;
       overflow: hidden;
       border-radius: 50%;
 
       img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
     }
   }

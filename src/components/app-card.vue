@@ -7,7 +7,7 @@
         <slot></slot>
       </template>
       <template v-else>
-        <h2 class="subtitle">{{ subtitle }}</h2>
+        <p class="subtitle">{{ subtitle }}</p>
       </template>
     </div>
   </div>
@@ -42,7 +42,7 @@ defineProps({
 .text-side {
   padding: 1rem;
   .title {
-    font-size: 1.5rem;
+    font-size: var(--mediumFontSize);
     color: var(--secondary-blue);
     text-align: center;
   }
@@ -51,12 +51,11 @@ defineProps({
     text-align: center;
     color: var(--black);
     margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: var(--smallFontSize);
   }
 
   ul {
-    color: var(--gray2) !important;
+    color: var(--gray) !important;
 
     li {
       font-weight: 700 !important;

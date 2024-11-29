@@ -11,12 +11,10 @@
               <RouterLink to="/">Home</RouterLink>
             </li>
             <li>
-              <a href="#about">About</a>
-              <!-- <RouterLink to="/about">About</RouterLink> -->
+              <RouterLink to="/about">About</RouterLink>
             </li>
             <li>
-              <a href="#services">Services</a>
-              <!-- <RouterLink to="/services">Services</RouterLink> -->
+              <RouterLink to="/services">Services</RouterLink>
             </li>
             <li>
               <RouterLink to="/blog">Blog</RouterLink>
@@ -45,10 +43,10 @@
               <RouterLink to="/">Home</RouterLink>
             </li>
             <li>
-              <a href="#about">About</a>
+              <RouterLink to="/about">About</RouterLink>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <RouterLink to="/services">Services</RouterLink>
             </li>
             <li>
               <RouterLink to="/blog">Blog</RouterLink>
@@ -58,7 +56,7 @@
             </li>
           </ul>
           <AppButton class="my-button"
-            ><RouterLink to="/contact">Contact us</RouterLink></AppButton
+            ><RouterLink to="/contact">CONTACT US</RouterLink></AppButton
           >
         </div>
       </div>

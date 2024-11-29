@@ -21,7 +21,9 @@
             activities in June 1994 with its registered address at Tai Solarin
             Way, P.M.B. 2004, Ikenne-Remo, Ogun State.
           </p>
-          <AppButton class="learn-more">Learn More</AppButton>
+          <RouterLink to="/about">
+            <AppButton class="learn-more">Learn More </AppButton>
+          </RouterLink>
         </div>
       </div>
     </section>
@@ -117,7 +119,11 @@ import slider2 from "../assets/imgs/slider2.jpeg";
 import slider3 from "../assets/imgs/slider3.jpeg";
 import slider4 from "../assets/imgs/slider4.jpeg";
 import slider5 from "../assets/imgs/slider5.jpeg";
-import clientPhoto from "../assets/imgs/DSC_3160.jpg";
+import testimonialOne from "../assets/imgs/testimonial-1.jpeg";
+import testimonialTwo from "../assets/imgs/testimonial-2.jpeg";
+import testimonialThree from "../assets/imgs/testimonial-3.jpeg";
+import testimonialFour from "../assets/imgs/testimonial-4.jpeg";
+import testimonialFive from "../assets/imgs/testimonial-5.jpeg";
 import {
   Briefcase,
   DollarSign,
@@ -130,27 +136,27 @@ import AppButton from "../components/app-button.vue";
 const testimonialsOption = [
   {
     name: "Getting a loan facility from Ikenne Microfinance Bank was so easy and seamless compared to what is obtainable in other banks. Thank you Ikenne Microfinance Bank team for the excellent job. I will also recommend Ikenne Microfinance Bank to friends and families.",
-    img: clientPhoto,
+    img: testimonialOne,
     clientName: "Fisayo",
   },
   {
     name: "The customer service at Ikenne Microfinance Bank is second to none. I was assisted throughout the loan application process and got a quick response. I highly recommend their services.",
-    img: clientPhoto,
+    img: testimonialTwo,
     clientName: "Kunle",
   },
   {
     name: "Ikenne Microfinance Bank made it so easy for me to access funds to expand my small business. Their team was helpful and professional. I am truly grateful.",
-    img: clientPhoto,
+    img: testimonialThree,
     clientName: "Adebayo",
   },
   {
     name: "I was skeptical about microfinance banks, but Ikenne Microfinance Bank changed my perception. Their process was transparent, and the loan terms were fair. Excellent service!",
-    img: clientPhoto,
+    img: testimonialFour,
     clientName: "Chioma",
   },
   {
     name: "Ikenne Microfinance Bank offers outstanding financial products and services. Their staff is always friendly, knowledgeable, and eager to help. Highly recommend!",
-    img: clientPhoto,
+    img: testimonialFive,
     clientName: "Samuel",
   },
 ];

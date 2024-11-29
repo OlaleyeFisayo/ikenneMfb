@@ -5,19 +5,8 @@
 }
 
 :root {
-  --blue: ;
   --white: #ffffff;
-  --red: #ff0000;
-  --dark-red: #b30000;
-  --light-red: #ff6666;
-  --black: #161515;
-  --gray: #d3d3d3;
-  --gray2: #808080;
-  --light-gray: #f2f2f2;
-  --green: #008000;
-  --dark-green: #006400;
-  --light-green: #90ee90;
-  --borderRadius: 0.7rem;
+  --borderRadius: 0.5rem;
   --boxShadow: 22px 26px 18px -26px rgba(0, 0, 0, 0.09);
   --primary-blue: #007bff;
   --secondary-blue: #0f3661;
@@ -27,6 +16,10 @@
   --background-light: #f9fafb;
   --text-dark: #212529;
   --text-light: #ffffff;
+  --gray: #d3d3d3;
+  --largeFontSize: 2rem;
+  --mediumFontSize: 1.55rem;
+  --smallFontSize: 1.05rem;
 }
 
 @font-face {
@@ -37,4 +30,10 @@
 body {
   color: var(--black);
   font-family: "SpaceGrotesk", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
 }
