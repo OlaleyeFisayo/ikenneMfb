@@ -6,9 +6,10 @@
   & > .title {
     text-align: center;
     font-size: 1.7rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0 auto 1rem;
     color: var(--secondary-blue);
     text-transform: uppercase;
+    position: relative;
   }
 }
 
@@ -89,9 +90,7 @@
 
 .about-section {
   width: 100%;
-  padding: 4rem 2rem 2rem;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
+  padding: 2rem;
   background-color: var(--white);
 
   .content {
@@ -102,6 +101,7 @@
 
     @media (max-width: 700px) {
       grid-template-columns: 1fr;
+      gap: 0;
     }
 
     .img-side {
