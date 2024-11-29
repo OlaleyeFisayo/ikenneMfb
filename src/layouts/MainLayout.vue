@@ -19,14 +19,14 @@
               <!-- <RouterLink to="/services">Services</RouterLink> -->
             </li>
             <li>
-              <RouterLink to="/team">Team</RouterLink>
+              <RouterLink to="/blog">Blog</RouterLink>
             </li>
             <li>
-              <RouterLink to="/blog">Blog</RouterLink>
+              <RouterLink to="/resources">Resources</RouterLink>
             </li>
           </ul>
           <AppButton class="my-button"
-            ><RouterLink to="/contact">Contact us</RouterLink></AppButton
+            ><RouterLink to="/contact">CONTACT US</RouterLink></AppButton
           >
         </div>
         <AppButton class="hamburger" @click="toggleMenu">
@@ -51,13 +51,10 @@
               <a href="#services">Services</a>
             </li>
             <li>
-              <RouterLink to="/team">Team</RouterLink>
-            </li>
-            <li>
               <RouterLink to="/blog">Blog</RouterLink>
             </li>
             <li>
-              <RouterLink to="/resources">Blog</RouterLink>
+              <RouterLink to="/resources">Resources</RouterLink>
             </li>
           </ul>
           <AppButton class="my-button"
@@ -76,15 +73,15 @@
           <p>Ikenne Microfinance Bank</p>
           <div class="details">
             <p>
-              <MapPin color="#ff0000" :width="15" :height="15" />
+              <MapPin color="#ffc107" :width="15" :height="15" />
               58, Tai Solarin way, Ikenne-Remo, Ogun State
             </p>
             <p>
-              <Phone color="#ff0000" :width="15" :height="15" />
+              <Phone color="#ffc107" :width="15" :height="15" />
               +234 8135536531
             </p>
             <p>
-              <Mail color="#ff0000" :width="15" :height="15" />
+              <Mail color="#ffc107" :width="15" :height="15" />
               info@ikennemfb.com
             </p>
           </div>
@@ -97,7 +94,9 @@
             <li><RouterLink to="/service">Services</RouterLink></li>
             <li><RouterLink to="/blog">Blog</RouterLink></li>
             <li><RouterLink to="/contact">Contact</RouterLink></li>
-            <li><RouterLink to="/team">Team</RouterLink></li>
+            <li>
+              <RouterLink to="/resources">Resources</RouterLink>
+            </li>
           </ul>
         </div>
         <div class="question">
@@ -126,9 +125,9 @@
           reserved
         </p>
         <div class="social-links">
-          <a href="#"><Facebook color="#ffffff" /></a>
-          <a href="#"><Twitter color="#ffffff" /></a>
-          <a href="#"><Instagram color="#ffffff" /></a>
+          <a href="#"><Facebook color="#ffc107" /></a>
+          <a href="#"><Twitter color="#ffc107" /></a>
+          <a href="#"><Instagram color="#ffc107" /></a>
         </div>
       </div>
     </footer>

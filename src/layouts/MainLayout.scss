@@ -2,7 +2,7 @@
   .navbar {
     width: 100%;
     padding: 0 2rem;
-    background-color: var(--white);
+    background-color: var(--background-light);
     position: relative;
 
     .navbar-content {
@@ -45,27 +45,21 @@
 
           li {
             overflow: hidden;
+
             a {
-              position: relative;
+              padding: 0.8rem !important;
               font-size: 1.1rem;
               text-decoration: none;
-              color: var(--black);
+              color: var(--text-dark);
               width: fit-content;
+              text-transform: uppercase;
+              display: block;
+              border-radius: var(--borderRadius);
+              transition: 300ms ease-in-out;
 
               &:hover {
-                &::before {
-                  transform: translateX(0);
-                }
-              }
-
-              &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                border-bottom: 1px solid var(--red);
-                bottom: 0;
-                transform: translateX(-100%);
-                transition: transform 300ms ease-in-out;
+                background-color: var(--accent-yellow);
+                color: var(--text-light);
               }
             }
           }
@@ -131,8 +125,9 @@
               position: relative;
               font-size: 1.1rem;
               text-decoration: none;
-              color: var(--black);
+              color: var(--text-dark);
               width: fit-content;
+              padding: 1rem;
 
               &:hover {
                 &::before {
@@ -144,7 +139,7 @@
                 content: "";
                 position: absolute;
                 width: 100%;
-                border-bottom: 1px solid var(--red);
+                border-bottom: 1px solid var(--accent-yellow);
                 bottom: 0;
                 transform: translateX(-100%);
                 transition: transform 300ms ease-in-out;
@@ -163,7 +158,7 @@
     }
   }
   .footer-top {
-    background: var(--light-gray);
+    background: var(--blue3);
     padding: 2rem;
 
     .content {
@@ -174,6 +169,7 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
       justify-content: space-between;
+      color: var(--text-light);
 
       @media (max-width: 700px) {
         grid-template-columns: repeat(2, 1fr);
@@ -196,6 +192,11 @@
       }
 
       .contact-details {
+        color: var(--gray2);
+
+        h1 {
+          color: var(--text-light);
+        }
         p {
           @media (max-width: 550px) {
             text-align: center;
@@ -210,7 +211,10 @@
       }
 
       .our-links {
+        color: var(--gray2);
+
         h1 {
+          color: var(--text-light);
           text-align: center;
         }
         .footer-link {
@@ -220,14 +224,15 @@
           gap: 1rem;
           li {
             a {
-              color: var(--black);
+              color: var(--background-light);
               text-decoration: none;
               text-align: center;
               width: 100%;
               display: block;
+              color: var(--gray2);
 
               &:hover {
-                color: var(--red);
+                color: var(--accent-yellow);
               }
             }
           }
@@ -235,6 +240,11 @@
       }
 
       .question {
+        color: var(--gray2);
+
+        h1 {
+          color: var(--text-light);
+        }
         p {
           @media (max-width: 550px) {
             text-align: center;
@@ -250,6 +260,7 @@
         p {
           @media (max-width: 550px) {
             text-align: center;
+            color: var(--gray2);
           }
         }
 
@@ -264,7 +275,7 @@
     }
   }
   .footer-bottom {
-    background: var(--gray);
+    background: var(--secondary-blue);
     padding: 2rem;
 
     .content {
@@ -275,6 +286,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
+      color: var(--text-light);
 
       @media (max-width: 550px) {
         flex-direction: column;
@@ -283,7 +295,7 @@
       p {
         a {
           text-decoration: none;
-          color: var(--red);
+          color: var(--accent-yellow);
         }
       }
 

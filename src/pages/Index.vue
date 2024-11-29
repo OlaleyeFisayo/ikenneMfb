@@ -21,12 +21,13 @@
             activities in June 1994 with its registered address at Tai Solarin
             Way, P.M.B. 2004, Ikenne-Remo, Ogun State.
           </p>
+          <AppButton class="learn-more">Learn More</AppButton>
         </div>
       </div>
     </section>
     <section class="company-values">
       <div class="content">
-        <AppGrid class="mission-vision">
+        <AppGrid class="mission-vision" :grid="2">
           <AppCard
             title="Mission"
             subtitle="To offer demand-driven microfinance services to microenterpreneurs
@@ -40,32 +41,6 @@
             subtitle=" To provide efficient services to the underserved microenterprise
               sector thus bridging the existing gap and ultimately create
               wealth, alleviate poverty and reduce unemployment in the sector."
-          />
-          <AppCard title="Core values" type="list">
-            <ul>
-              <li>Professionalism</li>
-              <li>Accountability</li>
-              <li>Customer Satisfaction</li>
-              <li>Efficiency</li>
-              <li>Integrity</li>
-            </ul>
-          </AppCard>
-          <AppCard
-            title="Financial Strength"
-            subtitle=" The Bank has shareholders’ fund of N104M as at 31st December, 2019
-              for above the regulatory requirement of N50M for Tier 2 Unit
-              Microfinance Bank. This means that the Bank has double financial
-              capacity of its peers."
-          />
-          <AppCard
-            title="Ownership"
-            subtitle="The ownership of the Bank cuts across the social strata of the
-              community with reputable professionals and people of integrity."
-          />
-          <AppCard
-            title="Strategic Intent"
-            subtitle="The Bank strategic intent is to be among the top five (5) of most
-              preferred Microfinance Banks in Nigeria by the year 2025."
           />
         </AppGrid>
       </div>
@@ -87,18 +62,18 @@
         </div>
         <div class="right-section">
           <ul>
-            <li><Target color="#b30000" /> Target Saving Account</li>
-            <li><Users color="#b30000" /> Dependent Relative Account</li>
+            <li><Target color="#ffc107" /> Target Saving Account</li>
+            <li><Users color="#ffc107" /> Dependent Relative Account</li>
             <li>
-              <Briefcase color="#b30000" /> Ikenne Regular Current Account
+              <Briefcase color="#ffc107" /> Ikenne Regular Current Account
             </li>
-            <li><Baby color="#b30000" /> Children Saving Account</li>
-            <li><Book color="#b30000" /> Ereke - Wise Account</li>
-            <li><PiggyBank color="#b30000" /> Regular Savings Account</li>
-            <li><Calendar color="#b30000" /> Daily Savings</li>
-            <li><FileText color="#b30000" /> Government Tax Collection</li>
-            <li><Send color="#b30000" /> E-Transfer</li>
-            <li><DollarSign color="#b30000" /> Loans</li>
+            <li><Baby color="#ffc107" /> Children Saving Account</li>
+            <li><Book color="#ffc107" /> Ereke - Wise Account</li>
+            <li><PiggyBank color="#ffc107" /> Regular Savings Account</li>
+            <li><Calendar color="#ffc107" /> Daily Savings</li>
+            <li><FileText color="#ffc107" /> Government Tax Collection</li>
+            <li><Send color="#ffc107" /> E-Transfer</li>
+            <li><DollarSign color="#ffc107" /> Loans</li>
           </ul>
         </div>
       </div>
@@ -164,6 +139,7 @@ import {
   Target,
   Users,
 } from "lucide-vue-next";
+import AppButton from "../components/app-button.vue";
 
 const testimonialsOption = [
   {

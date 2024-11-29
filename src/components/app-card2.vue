@@ -24,14 +24,14 @@ defineProps({
 
 <style scoped lang="scss">
 .app-card2 {
-  background: var(--black);
+  background: var(--blue3);
   border-radius: var(--borderRadius);
   box-shadow: var(--boxShadow);
   padding: 2rem;
-  color: var(--white);
+  color: var(--background-light);
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   height: 100%;
   justify-content: space-between;
@@ -48,16 +48,15 @@ defineProps({
       top: -15px;
       left: -20px;
       font-style: italic;
-      color: var(--red);
+      color: var(--accent-yellow);
     }
     &::after {
       content: '"';
       font-size: 1.7rem;
       position: absolute;
       bottom: -20px;
-      // right: -20px;
       font-style: italic;
-      color: var(--red);
+      color: var(--accent-yellow);
     }
   }
 

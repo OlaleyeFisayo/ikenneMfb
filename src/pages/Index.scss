@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 1.7rem;
     margin-bottom: 1rem;
-    color: var(--dark-green);
+    color: var(--secondary-blue);
     text-transform: uppercase;
   }
 }
@@ -26,7 +26,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -43,7 +43,7 @@
     justify-content: center;
 
     .greeting {
-      color: var(--dark-green);
+      color: var(--secondary-blue);
       font-size: 2rem;
 
       @media (max-width: 560px) {
@@ -93,7 +93,6 @@
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
   background-color: var(--white);
-  margin-top: -4rem;
 
   .content {
     display: grid;
@@ -106,7 +105,8 @@
     }
 
     .img-side {
-      height: 600px;
+      height: 450px;
+      max-width: 500px;
       width: 100%;
       margin: 0 auto;
       overflow: hidden;
@@ -119,16 +119,24 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: fill;
+        object-fit: contain;
       }
     }
 
     .text-side {
+      @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
       h1 {
         margin-top: 1rem;
         font-size: 2rem;
         margin-bottom: 2rem;
-        color: var(--dark-green);
+        color: var(--secondary-blue);
 
         @media (max-width: 700px) {
           text-align: center;
@@ -136,11 +144,12 @@
       }
 
       p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         max-width: 450px;
         width: 100%;
         letter-spacing: 1px;
         font-weight: 400;
+        margin-bottom: 1rem;
 
         @media (max-width: 700px) {
           text-align: center;
@@ -170,11 +179,11 @@
 
         .subtitle {
           text-align: center;
-          color: var(--black);
+          color: var(--text-dark);
           margin-top: 1rem;
         }
         ul {
-          color: var(--black);
+          color: var(--text-dark);
           padding-left: 1rem;
           margin-top: 1rem;
         }
@@ -186,7 +195,7 @@
 .our-products {
   width: 100%;
   padding: 2rem;
-  background-color: var(--black);
+  background-color: var(--blue3);
   color: var(--white);
 
   .content {
@@ -231,7 +240,7 @@
         }
 
         .button {
-          background: var(--dark-green);
+          background: var(--primary-blue);
           color: var(--white);
           padding: 1rem;
           display: block;
@@ -241,7 +250,7 @@
           border-radius: var(--borderRadius);
 
           &:hover {
-            background: var(--green);
+            background: var(--hoverBlue);
           }
         }
       }

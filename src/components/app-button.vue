@@ -9,7 +9,7 @@
 <style scoped lang="scss">
 .app-button {
   padding: 0.9rem;
-  background: var(--red);
+  background: var(--primary-blue);
   color: var(--white) !important;
   text-decoration: none !important;
   border-radius: var(--borderRadius);
@@ -18,7 +18,7 @@
   transition: 300ms ease-in-out;
 
   &:hover {
-    background: var(--light-red);
+    background: var(--hoverBlue);
   }
 }
 </style>

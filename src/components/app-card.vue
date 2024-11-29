@@ -29,28 +29,30 @@ defineProps({
   box-shadow: var(--boxShadow);
   border-radius: var(--borderRadius);
   border: 1px solid var(--gray);
-  user-select: none;
   transition: 300ms ease-in-out;
+  max-width: 500px;
+  width: 100%;
 
   &:hover {
     transform: scale(1.05);
   }
+  margin: 0 auto;
 }
 
 .text-side {
   padding: 1rem;
   .title {
     font-size: 1.5rem;
-    color: var(--dark-green);
+    color: var(--secondary-blue);
     text-align: center;
   }
 
   .subtitle {
     text-align: center;
-    color: var(--gray2);
+    color: var(--black);
     margin-top: 1rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   ul {

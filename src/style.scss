@@ -4,11 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
-  color: var(--black);
-}
-
 :root {
+  --blue: ;
   --white: #ffffff;
   --red: #ff0000;
   --dark-red: #b30000;
@@ -22,4 +19,22 @@ body {
   --light-green: #90ee90;
   --borderRadius: 0.7rem;
   --boxShadow: 22px 26px 18px -26px rgba(0, 0, 0, 0.09);
+  --primary-blue: #007bff;
+  --secondary-blue: #0f3661;
+  --blue3: #0d2034;
+  --hoverBlue: #4c84f0;
+  --accent-yellow: #ffc107;
+  --background-light: #f9fafb;
+  --text-dark: #212529;
+  --text-light: #ffffff;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+body {
+  color: var(--black);
+  font-family: "SpaceGrotesk", sans-serif;
 }
