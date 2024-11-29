@@ -2,7 +2,7 @@
   .navbar {
     width: 100%;
     padding: 0 2rem;
-    background-color: var(--background-light);
+    background-color: var(--text-light);
     position: relative;
 
     .navbar-content {
@@ -48,7 +48,7 @@
 
             a {
               padding: 0.8rem !important;
-              font-size: 1.1rem;
+              font-size: 1rem;
               text-decoration: none;
               color: var(--text-dark);
               width: fit-content;
@@ -123,7 +123,7 @@
             overflow: hidden;
             a {
               position: relative;
-              font-size: 1.1rem;
+              font-size: 1rem;
               text-decoration: none;
               color: var(--text-dark);
               width: fit-content;

@@ -46,36 +46,28 @@
       </div>
     </section>
     <section class="our-products">
-      <div class="content">
-        <div class="left-section">
-          <div class="details">
-            <h1 class="title">Our Products</h1>
-            <p class="subtitle">
-              We are here to Acelerate your business and help you find the way.
-            </p>
-            <div class="button-container">
-              <RouterLink to="/product" class="button"
-                >See all Product</RouterLink
-              >
-            </div>
+      <div class="left-section">
+        <div class="details">
+          <h1 class="title">Our Products</h1>
+          <p class="subtitle">
+            We are here to Acelerate your business and help you find the way.
+          </p>
+          <div class="button-container">
+            <RouterLink to="/product" class="button"
+              >See all Product</RouterLink
+            >
           </div>
         </div>
-        <div class="right-section">
-          <ul>
-            <li><Target color="#ffc107" /> Target Saving Account</li>
-            <li><Users color="#ffc107" /> Dependent Relative Account</li>
-            <li>
-              <Briefcase color="#ffc107" /> Ikenne Regular Current Account
-            </li>
-            <li><Baby color="#ffc107" /> Children Saving Account</li>
-            <li><Book color="#ffc107" /> Ereke - Wise Account</li>
-            <li><PiggyBank color="#ffc107" /> Regular Savings Account</li>
-            <li><Calendar color="#ffc107" /> Daily Savings</li>
-            <li><FileText color="#ffc107" /> Government Tax Collection</li>
-            <li><Send color="#ffc107" /> E-Transfer</li>
-            <li><DollarSign color="#ffc107" /> Loans</li>
-          </ul>
-        </div>
+      </div>
+      <div class="right-section">
+        <div class="black-background"></div>
+        <ul>
+          <li><PiggyBank color="#ffc107" /> Savings</li>
+          <li><Target color="#ffc107" /> Demand Deposit</li>
+          <li><Briefcase color="#ffc107" /> Fixed Deposit</li>
+          <li><DollarSign color="#ffc107" /> Loans Products</li>
+          <li><FileText color="#ffc107" /> Government Tax Collection</li>
+        </ul>
       </div>
     </section>
     <section class="testimonials">
