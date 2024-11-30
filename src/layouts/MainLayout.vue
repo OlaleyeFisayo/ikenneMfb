@@ -3,7 +3,7 @@
     <nav class="navbar">
       <div class="navbar-content">
         <RouterLink to="/" class="logo">
-          <img src="../assets/imgs/logo.jpeg" alt="logo" />
+          <img src="../assets/imgs/logo.jpeg" alt="logo" loading="lazy" />
         </RouterLink>
         <div class="links-section">
           <ul class="nav-links">
@@ -91,8 +91,8 @@
     <footer class="footer-bottom">
       <div class="content">
         <p>
-          &copy; 2024 <RouterLink to="/">Ikennemfb</RouterLink> All rights
-          reserved
+          &copy; {{ new Date().getFullYear() }}
+          <RouterLink to="/">Ikennemfb</RouterLink> All rights reserved
         </p>
         <div class="social-links">
           <a href="#"><Facebook color="#ffc107" /></a>
