@@ -218,6 +218,7 @@
               display: block;
               color: var(--gray);
               font-size: var(--smallFontSize);
+              text-transform: capitalize;
 
               &:hover {
                 color: var(--accent-yellow);

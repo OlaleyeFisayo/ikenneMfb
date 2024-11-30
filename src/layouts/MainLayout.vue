@@ -7,20 +7,8 @@
         </RouterLink>
         <div class="links-section">
           <ul class="nav-links">
-            <li>
-              <RouterLink to="/">Home</RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/about">About</RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/services">Services</RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/blog">Blog</RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/resources">Resources</RouterLink>
+            <li v-for="(page, i) in pageLinks" :key="i">
+              <RouterLink :to="page.link">{{ page.label }}</RouterLink>
             </li>
           </ul>
           <AppButton class="my-button"
@@ -39,20 +27,8 @@
         </div>
         <div class="links-section">
           <ul class="nav-links">
-            <li>
-              <RouterLink to="/">Home</RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/about">About</RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/services">Services</RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/blog">Blog</RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/resources">Resources</RouterLink>
+            <li v-for="(page, i) in pageLinks" :key="i">
+              <RouterLink :to="page.link">{{ page.label }}</RouterLink>
             </li>
           </ul>
           <AppButton class="my-button"
@@ -87,14 +63,10 @@
         <div class="our-links">
           <h1>Our Links</h1>
           <ul class="footer-link">
-            <li><RouterLink to="/">Home</RouterLink></li>
-            <li><RouterLink to="/about">About Us</RouterLink></li>
-            <li><RouterLink to="/service">Services</RouterLink></li>
-            <li><RouterLink to="/blog">Blog</RouterLink></li>
-            <li><RouterLink to="/contact">Contact</RouterLink></li>
-            <li>
-              <RouterLink to="/resources">Resources</RouterLink>
+            <li v-for="(page, i) in pageLinks" :key="i">
+              <RouterLink :to="page.link">{{ page.label }}</RouterLink>
             </li>
+            <li><RouterLink to="/contact">Contact</RouterLink></li>
           </ul>
         </div>
         <div class="question">
@@ -151,6 +123,29 @@ const menu = ref(false);
 const toggleMenu = () => {
   menu.value = !menu.value;
 };
+
+const pageLinks = [
+  {
+    label: "home",
+    link: "/",
+  },
+  {
+    label: "about",
+    link: "/about",
+  },
+  {
+    label: "services",
+    link: "/services",
+  },
+  {
+    label: "blog",
+    link: "/blog",
+  },
+  {
+    label: "resources",
+    link: "/resources",
+  },
+];
 </script>
 
 <style scoped lang="scss">
