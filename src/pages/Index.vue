@@ -55,7 +55,7 @@
             We are here to Acelerate your business and help you find the way.
           </p>
           <div class="button-container">
-            <RouterLink to="/product" class="button"
+            <RouterLink to="/services" class="button"
               >See all Product</RouterLink
             >
           </div>
