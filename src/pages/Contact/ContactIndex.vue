@@ -92,9 +92,9 @@ const formValue = ref([
     value: null,
   },
 ]);
-const isMessageFromComplete = computed(() =>
-  isFormComplete(convertToObject(formValue.value)),
-);
+
+const payload = computed(() => convertToObject(formValue.value));
+const isMessageFromComplete = computed(() => isFormComplete(payload.value));
 </script>
 
 <style scoped lang="scss">

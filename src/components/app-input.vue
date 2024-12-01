@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { PropType, ref, watch } from "vue";
 
 const props = defineProps({
   type: {
@@ -37,7 +37,12 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  value: [String, Number, null, undefined, Array],
+  value: {
+    type: [String, Number, Array] as PropType<
+      string | number | any[] | null | undefined
+    >,
+    default: null,
+  },
 });
 
 const emit = defineEmits(["update:model-value"]);
