@@ -7,13 +7,12 @@
           <p class="location">
             58, Tai Solarin Street, Ikenne-Remo, Ogun State
           </p>
-          <p class="email">Email: admin@ikennemfb.com</p>
+          <p class="email">Company Email: admin@ikennemfb.com</p>
           <p class="p-number">
-            Phone:
+            Contact Details:
             <span class="value">08033086092, kemiawolesi@ikennemfb.com</span>
           </p>
           <p class="p-number">
-            Phone:
             <span class="value">09044331665, kingshak@ikennemfb.com</span>
           </p>
         </div>
