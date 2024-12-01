@@ -42,7 +42,7 @@ defineProps({
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.5rem;
     border-left: 2px solid var(--accent-yellow);
     list-style: none;
     padding-left: 1rem;
