@@ -1,21 +1,10 @@
 <template>
-  <div class="app-grid" :style="styleSheet">
+  <div class="app-grid">
     <slot></slot>
   </div>
 </template>
 
-<script setup lang="ts">
-const props = defineProps({
-  grid: {
-    type: Number,
-    default: 3,
-  },
-});
-
-const styleSheet = {
-  gridTemplateColumns: `repeat(${props.grid}, 1fr)`,
-};
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .app-grid {
