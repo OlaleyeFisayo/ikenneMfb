@@ -28,10 +28,12 @@
         <div class="links-section">
           <ul class="nav-links">
             <li v-for="(page, i) in pageLinks" :key="i">
-              <RouterLink :to="page.link">{{ page.label }}</RouterLink>
+              <RouterLink :to="page.link" @click="toggleMenu">{{
+                page.label
+              }}</RouterLink>
             </li>
           </ul>
-          <RouterLink to="/contact">
+          <RouterLink to="/contact" @click="toggleMenu">
             <AppButton class="my-button">CONTACT US</AppButton>
           </RouterLink>
         </div>
@@ -52,11 +54,15 @@
             </p>
             <p>
               <Phone color="#ffc107" :width="15" :height="15" />
-              +234 8135536531
+              08033086092, kemiawolesi@ikennemfb.com
+            </p>
+            <p>
+              <Phone color="#ffc107" :width="15" :height="15" />
+              09044331665, kingshak@ikennemfb.com
             </p>
             <p>
               <Mail color="#ffc107" :width="15" :height="15" />
-              info@ikennemfb.com
+              admin@ikennemfb.com
             </p>
           </div>
         </div>
@@ -72,6 +78,16 @@
         <div class="question">
           <h1>Need a Loan?</h1>
           <p>You can talk to us</p>
+          <div class="details">
+            <p>
+              <Phone color="#ffc107" :width="15" :height="15" />
+              07065201382
+            </p>
+            <p>
+              <Phone color="#ffc107" :width="15" :height="15" />
+              08166015581
+            </p>
+          </div>
         </div>
         <div class="subscribe">
           <p>

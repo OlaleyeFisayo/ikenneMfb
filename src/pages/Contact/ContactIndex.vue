@@ -7,9 +7,14 @@
           <p class="location">
             58, Tai Solarin Street, Ikenne-Remo, Ogun State
           </p>
-          <p class="email">Email: info@ikennemfb.com</p>
+          <p class="email">Email: admin@ikennemfb.com</p>
           <p class="p-number">
-            Phone: <span class="value">+234-7066049929</span>
+            Phone:
+            <span class="value">08033086092, kemiawolesi@ikennemfb.com</span>
+          </p>
+          <p class="p-number">
+            Phone:
+            <span class="value">09044331665, kingshak@ikennemfb.com</span>
           </p>
         </div>
       </div>
@@ -62,13 +67,13 @@ const customerSupportReps = [
   {
     name: "Bunmi Oyegunwa",
     position: "Customer Relations Officer",
-    phoneNumber: "+234-8069183668",
+    phoneNumber: "08069183668",
     email: "oyegunwabunmi@ikennemfb.com",
   },
   {
     name: "Nike Gbolagade",
     position: "Customer Support",
-    phoneNumber: "+234-8065294044",
+    phoneNumber: "08065294044",
     email: "gbolagadenike@ikennemfb.com",
   },
 ];

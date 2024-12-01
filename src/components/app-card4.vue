@@ -1,7 +1,7 @@
 <template>
   <div class="app-card4">
     <div class="img-side">
-      <img :src="img" :alt="name" />
+      <img :src="img" :alt="name" loading="lazy" />
     </div>
     <div class="text-side">
       <h1>{{ name }}</h1>
@@ -25,6 +25,7 @@ defineProps({
   transition: 300ms ease-in-out;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 
   &:hover {
     transform: scale(1.05);
