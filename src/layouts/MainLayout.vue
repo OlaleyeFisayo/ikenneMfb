@@ -11,9 +11,9 @@
               <RouterLink :to="page.link">{{ page.label }}</RouterLink>
             </li>
           </ul>
-          <AppButton class="my-button"
-            ><RouterLink to="/contact">CONTACT US</RouterLink></AppButton
-          >
+          <RouterLink to="/contact">
+            <AppButton class="my-button">CONTACT US</AppButton>
+          </RouterLink>
         </div>
         <AppButton class="hamburger" @click="toggleMenu">
           <Menu />
@@ -31,9 +31,9 @@
               <RouterLink :to="page.link">{{ page.label }}</RouterLink>
             </li>
           </ul>
-          <AppButton class="my-button"
-            ><RouterLink to="/contact">CONTACT US</RouterLink></AppButton
-          >
+          <RouterLink to="/contact">
+            <AppButton class="my-button">CONTACT US</AppButton>
+          </RouterLink>
         </div>
       </div>
     </nav>
