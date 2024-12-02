@@ -5,7 +5,6 @@
 }
 
 :root {
-  --white: #ffffff;
   --borderRadius: 0.5rem;
   --boxShadow: 22px 26px 18px -26px rgba(0, 0, 0, 0.09);
   --primary-blue: #007bff;
@@ -13,6 +12,7 @@
   --blue3: #0d2034;
   --hoverBlue: #4c84f0;
   --accent-yellow: #ffc107;
+  --accent-yellow-hover: #ffd740;
   --background-light: #f9fafb;
   --text-dark: #212529;
   --text-light: #ffffff;
@@ -35,5 +35,5 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--text-light);
 }

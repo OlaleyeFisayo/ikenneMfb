@@ -107,7 +107,7 @@ const boardOfDirectors = [
 ];
 
 const management = [
-{
+  {
     img: AwolesiOluwakemi,
     name: "Mrs Awolesi Oluwakemi",
     position: "MD",

@@ -5,7 +5,6 @@
         <h2 class="greeting">Welcome to</h2>
         <h1 class="bank-name">Ikenne Microfinance Bank</h1>
       </div>
-      <div class="black-background"></div>
     </section>
     <section class="about-section" id="about">
       <div class="content">
@@ -59,8 +58,10 @@
             We are here to Acelerate your business and help you find the way.
           </p>
           <div class="button-container">
-            <RouterLink to="/services" class="button"
-              >See all Product</RouterLink
+            <RouterLink to="/services"
+              ><AppButton theme="secondary"
+                >See all Product</AppButton
+              ></RouterLink
             >
           </div>
         </div>
