@@ -158,6 +158,10 @@ const pageLinks = [
     link: "/blog",
   },
   {
+    label: "gallery",
+    link: "/gallery",
+  },
+  {
     label: "resources",
     link: "/resources",
   },

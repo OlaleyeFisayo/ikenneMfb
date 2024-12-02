@@ -27,11 +27,15 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    height: calc(100dvh - 182px);
+    height: calc(100dvh - 148px);
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
+
+    @media (max-width: 1000px) {
+      height: calc(100dvh - 182px);
+    }
 
     .greeting {
       color: var(--secondary-blue);
