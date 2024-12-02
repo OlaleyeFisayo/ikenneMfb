@@ -22,6 +22,7 @@
   background-size: cover;
   position: relative;
   z-index: -1;
+  animation: slider 10s infinite;
 
   .welcome-content {
     max-width: 1440px;
@@ -79,6 +80,19 @@
         color: var(--red);
       }
     }
+  }
+}
+
+@keyframes slider {
+  0% {
+    background-image: url("../assets/imgs/heroSection.jpg");
+  }
+  50% {
+    background-image: url("../assets/imgs/welcome-slider2.jpg");
+    background-position: top;
+  }
+  100% {
+    background-image: url("../assets/imgs/heroSection.jpg");
   }
 }
 
