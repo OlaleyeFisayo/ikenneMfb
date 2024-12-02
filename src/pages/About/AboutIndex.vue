@@ -80,12 +80,7 @@ const boardOfDirectors = [
     position: "Chairman",
   },
   {
-    img: AwolesiOluwakemi,
-    name: "Mrs Awolesi Oluwakemi",
-    position: "Managing Director",
-  },
-  {
-    img: OlufemiAllen,
+    // img: OlufemiAllen,
     name: "Otunba Olufemi Allen",
     position: "Director",
   },
@@ -104,9 +99,19 @@ const boardOfDirectors = [
     name: "Mr. Gbolahan Adenuga",
     position: "Director",
   },
+  {
+    img: AwolesiOluwakemi,
+    name: "Mrs Awolesi Oluwakemi",
+    position: "MD",
+  },
 ];
 
 const management = [
+{
+    img: AwolesiOluwakemi,
+    name: "Mrs Awolesi Oluwakemi",
+    position: "MD",
+  },
   {
     img: OluwatoyinRufus,
     name: "Pastor Oluwatoyin Rufus Patrick",
