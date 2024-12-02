@@ -60,7 +60,7 @@ import { convertToObject, isFormComplete } from "../../helpers";
 const customerSupportReps = [
   {
     position: "Customer Support?",
-    phoneNumber: "08069183668",
+    phoneNumber: "08069183668, 08065294044",
   },
   {
     position: "Need a Loan?",
