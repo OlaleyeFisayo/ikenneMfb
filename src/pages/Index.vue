@@ -10,7 +10,11 @@
     <section class="about-section" id="about">
       <div class="content">
         <div class="img-side">
-          <img src="../assets/imgs/DSC_3157.jpg" alt="team photo" loading="lazy"/>
+          <img
+            src="../assets/imgs/DSC_3157.jpg"
+            alt="team photo"
+            loading="lazy"
+          />
         </div>
         <div class="text-side">
           <h1>Our Bank</h1>
@@ -101,7 +105,11 @@
             class=""
           >
             <div class="img-container">
-              <img :src="photo.img" :alt="`slider${index + 1}`" loading="lazy"/>
+              <img
+                :src="photo.img"
+                :alt="`slider${index + 1}`"
+                loading="lazy"
+              />
             </div>
           </SplideSlide>
         </Splide>

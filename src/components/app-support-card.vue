@@ -1,18 +1,14 @@
 <template>
   <div class="app-support-card">
-    <h1 class="name">{{ repName }}</h1>
-    <p>{{ position }}</p>
+    <p class="position">{{ position }}</p>
     <p class="phone-number">{{ phoneNumber }}</p>
-    <p>{{ email }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps({
-  repName: String,
   position: String,
   phoneNumber: String,
-  email: String,
 });
 </script>
 
@@ -27,7 +23,7 @@ defineProps({
     text-align: center;
   }
 
-  .name {
+  .position {
     font-size: var(--mediumFontSize);
   }
 

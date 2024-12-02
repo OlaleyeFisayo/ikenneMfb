@@ -10,9 +10,6 @@
           <p class="email">Company Email: admin@ikennemfb.com</p>
           <p class="p-number">
             Contact Details:
-            <span class="value">08033086092, kemiawolesi@ikennemfb.com</span>
-          </p>
-          <p class="p-number">
             <span class="value">09044331665, kingshak@ikennemfb.com</span>
           </p>
         </div>
@@ -31,10 +28,8 @@
             <AppSupportCard
               v-for="(customerSupportRep, i) in customerSupportReps"
               :key="i"
-              :repName="customerSupportRep.name"
               :position="customerSupportRep.position"
               :phoneNumber="customerSupportRep.phoneNumber"
-              :email="customerSupportRep.email"
             />
           </div>
         </div>
@@ -64,16 +59,12 @@ import { convertToObject, isFormComplete } from "../../helpers";
 
 const customerSupportReps = [
   {
-    name: "Bunmi Oyegunwa",
-    position: "Customer Relations Officer",
+    position: "Customer Support?",
     phoneNumber: "08069183668",
-    email: "oyegunwabunmi@ikennemfb.com",
   },
   {
-    name: "Nike Gbolagade",
-    position: "Customer Support",
-    phoneNumber: "08065294044",
-    email: "gbolagadenike@ikennemfb.com",
+    position: "Need a Loan?",
+    phoneNumber: "07065201382, 08166015581 ",
   },
 ];
 
@@ -86,7 +77,7 @@ const formValue = ref([
   {
     placeholder: "Email",
     tag: "email",
-    type: "password",
+    type: "email",
     value: null,
   },
   {

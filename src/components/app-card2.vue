@@ -5,7 +5,7 @@
     </p>
     <div class="client-details">
       <div class="img-container">
-        <img :src="img" alt="client's image" loading="lazy"/>
+        <img :src="img" alt="client's image" loading="lazy" />
       </div>
       <div class="name">
         <h1>{{ clientName }}</h1>
