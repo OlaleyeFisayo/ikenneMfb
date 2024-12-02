@@ -19,7 +19,7 @@ defineProps({
     default: false,
   },
   theme: {
-    type: String,
+    type: String as () => keyof typeof styleSheet,
     default: "primary",
   },
 });
