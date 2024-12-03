@@ -12,7 +12,9 @@
             </li>
           </ul>
           <RouterLink to="/contact">
-            <AppButton class="my-button" theme="secondary">CONTACT US</AppButton>
+            <AppButton class="my-button" theme="secondary"
+              >CONTACT US</AppButton
+            >
           </RouterLink>
         </div>
         <AppButton class="hamburger" @click="toggleMenu">
@@ -34,7 +36,9 @@
             </li>
           </ul>
           <RouterLink to="/contact" @click="toggleMenu">
-            <AppButton class="my-button">CONTACT US</AppButton>
+            <AppButton class="my-button" theme="secondary"
+              >CONTACT US</AppButton
+            >
           </RouterLink>
         </div>
       </div>

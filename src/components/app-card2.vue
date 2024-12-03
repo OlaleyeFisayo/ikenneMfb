@@ -24,7 +24,7 @@ defineProps({
 
 <style scoped lang="scss">
 .app-card2 {
-  background: var(--primary-blue);
+  background: var(--blue4);
   border-radius: var(--borderRadius);
   box-shadow: var(--boxShadow);
   padding: 2rem;

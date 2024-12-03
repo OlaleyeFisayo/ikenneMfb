@@ -54,11 +54,13 @@ defineProps({
     h1 {
       font-size: var(--mediumFontSize);
       text-align: center;
+      color: var(--secondary-blue);
     }
 
     p {
       font-size: var(--smallFontSize);
       text-align: center;
+      color: var(--blue3);
     }
   }
 }

@@ -49,7 +49,7 @@ defineProps({
 
   .subtitle {
     text-align: center;
-    color: var(--black);
+    color: var(--blue3);
     margin-top: 1rem;
     font-size: var(--smallFontSize);
   }

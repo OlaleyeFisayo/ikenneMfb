@@ -157,6 +157,7 @@
         letter-spacing: 1px;
         font-weight: 400;
         margin-bottom: 1rem;
+        color: var(--blue3);
 
         @media (max-width: 700px) {
           text-align: center;
@@ -199,7 +200,7 @@
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
   width: 100%;
-  background-color: var(--primary-blue);
+  background-color: var(--blue4);
   color: var(--text-light);
   overflow: hidden;
   height: 500px;
@@ -278,7 +279,7 @@
     }
 
     ul {
-      background-color: var(--primary-blue);
+      background-color: var(--blue4);
       list-style: none;
       display: flex;
       flex-direction: column;
