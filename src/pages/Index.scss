@@ -199,7 +199,7 @@
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
   width: 100%;
-  background-color: var(--secondary-blue);
+  background-color: var(--primary-blue);
   color: var(--text-light);
   overflow: hidden;
   height: 500px;
@@ -246,21 +246,6 @@
           justify-content: center;
         }
       }
-
-      .button {
-        background: var(--primary-blue);
-        color: var(--text-light);
-        padding: 1rem;
-        display: block;
-        width: fit-content;
-        font-weight: 700;
-        text-decoration: none;
-        border-radius: var(--borderRadius);
-
-        &:hover {
-          background: var(--hoverBlue);
-        }
-      }
     }
   }
 
@@ -293,7 +278,7 @@
     }
 
     ul {
-      background-color: var(--secondary-blue);
+      background-color: var(--primary-blue);
       list-style: none;
       display: flex;
       flex-direction: column;

@@ -16,7 +16,7 @@ defineProps({
 
 <style scoped lang="scss">
 .app-card3 {
-  background: var(--secondary-blue);
+  background: var(--primary-blue);
   border-radius: var(--borderRadius);
   box-shadow: var(--boxShadow);
   color: var(--background-light);
@@ -62,7 +62,7 @@ defineProps({
     li {
       width: 100%;
       font-size: var(--smallFontSize);
-      color: var(--gray);
+      color: var(--text-light);
     }
   }
 }

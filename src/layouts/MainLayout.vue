@@ -12,7 +12,7 @@
             </li>
           </ul>
           <RouterLink to="/contact">
-            <AppButton class="my-button">CONTACT US</AppButton>
+            <AppButton class="my-button" theme="secondary">CONTACT US</AppButton>
           </RouterLink>
         </div>
         <AppButton class="hamburger" @click="toggleMenu">
@@ -100,7 +100,7 @@
             id="email"
             placeholder="Enter your Email"
           />
-          <AppButton>SUBSCRIBE</AppButton>
+          <AppButton theme="secondary">SUBSCRIBE</AppButton>
         </div>
       </div>
     </footer>

@@ -149,7 +149,7 @@
     }
   }
   .footer-top {
-    background: var(--blue3);
+    background: var(--primary-blue);
     padding: 2rem;
 
     .content {
@@ -184,7 +184,7 @@
       }
 
       .contact-details {
-        color: var(--gray);
+        color: var(--text-light);
 
         h1 {
           color: var(--text-light);
@@ -205,7 +205,7 @@
       }
 
       .our-links {
-        color: var(--gray);
+        color: var(--text-light);
 
         h1 {
           color: var(--text-light);
@@ -223,7 +223,7 @@
               text-align: center;
               width: 100%;
               display: block;
-              color: var(--gray);
+              color: var(--text-light);
               font-size: var(--smallFontSize);
               text-transform: capitalize;
 
@@ -236,7 +236,7 @@
       }
 
       .question {
-        color: var(--gray);
+        color: var(--text-light);
 
         h1 {
           color: var(--text-light);
@@ -262,7 +262,7 @@
         gap: 1rem;
 
         p {
-          color: var(--gray);
+            color: var(--text-light);
           font-size: var(--smallFontSize);
           @media (max-width: 550px) {
             text-align: center;
@@ -280,7 +280,7 @@
     }
   }
   .footer-bottom {
-    background: var(--secondary-blue);
+    background: var(--primary-blue);
     padding: 1.5rem;
 
     .content {
