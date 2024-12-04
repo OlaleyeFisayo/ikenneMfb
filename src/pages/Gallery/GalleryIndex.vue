@@ -50,7 +50,7 @@ const gallarySliderOption = {
   perPage: 2,
   gap: "1rem",
   breakpoints: {
-    400: {
+    900: {
       perPage: 1,
     },
   },
