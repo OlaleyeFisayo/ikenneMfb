@@ -64,7 +64,7 @@
 <script setup lang="ts">
 import SuluKehinde from "../../assets/imgs/DSC_3160.jpg";
 import AwolesiOluwakemi from "../../assets/imgs/DSC_3176.jpg";
-import LanreSotunde from "../../assets/imgs/DSC_3197.jpg";
+import LanreSotunde from "../../assets/imgs/lanre.jpeg";
 // import OlufemiAllen from "../../assets/imgs/DSC_3208.jpg";
 import AdekunleAdeniyi from "../../assets/imgs/DSC_3165.jpg";
 import GbolahanAdenuga from "../../assets/imgs/DSC_3171.jpg";

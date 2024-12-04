@@ -44,7 +44,7 @@
               this mission."
           />
           <AppCard
-            title="Visions"
+            title="Vision"
             subtitle=" To provide efficient services to the underserved microenterprise
               sector thus bridging the existing gap and ultimately create
               wealth, alleviate poverty and reduce unemployment in the sector."
