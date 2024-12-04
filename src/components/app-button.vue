@@ -2,7 +2,6 @@
   <button
     :class="`app-button ${disabled && !loading && 'disabled'} ${theme === 'primary' ? 'primary' : 'secondary'}`"
     :disabled="disabled || loading"
-    :style="styleSheet[theme]"
   >
     <slot></slot>
   </button>
@@ -18,20 +17,7 @@ defineProps({
     type: Boolean,
     default: false,
   },
-  theme: {
-    type: String as () => keyof typeof styleSheet,
-    default: "primary",
-  },
 });
-
-const styleSheet = {
-  primary: {
-    background: "var(--primary-blue)",
-  },
-  secondary: {
-    background: "var(--accent-yellow)",
-  },
-};
 </script>
 
 <style scoped lang="scss">
@@ -44,11 +30,9 @@ const styleSheet = {
   cursor: pointer;
   transition: 300ms ease-in-out;
   font-size: var(--smallFontSize);
+  background: var(--accent-yellow);
 
-  &.primary:hover {
-    background: var(--hoverBlue) !important;
-  }
-  &.secondary:hover {
+  &:hover {
     background: var(--accent-yellow-hover) !important;
   }
 

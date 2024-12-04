@@ -23,6 +23,7 @@
   position: relative;
   z-index: -1;
   animation: slider 10s infinite;
+  transition: animation 200ms ease-in-out;
 
   .welcome-content {
     max-width: 1440px;
@@ -85,14 +86,13 @@
 
 @keyframes slider {
   0% {
-    background-image: url("../assets/imgs/heroSection.jpg");
+    background-image: url("../assets/imgs/welcome-slider1.jpg");
   }
   50% {
     background-image: url("../assets/imgs/welcome-slider2.jpg");
-    background-position: top;
   }
   100% {
-    background-image: url("../assets/imgs/heroSection.jpg");
+    background-image: url("../assets/imgs/welcome-slider1.jpg");
   }
 }
 
@@ -272,7 +272,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.1);
       width: 100%;
       height: 100%;
       z-index: -1;

@@ -25,9 +25,7 @@
             Way, P.M.B. 2004, Ikenne-Remo, Ogun State.
           </p>
           <RouterLink to="/about">
-            <AppButton class="learn-more" theme="secondary"
-              >Learn More
-            </AppButton>
+            <AppButton class="learn-more">Learn More </AppButton>
           </RouterLink>
         </div>
       </div>
@@ -61,9 +59,7 @@
           </p>
           <div class="button-container">
             <RouterLink to="/services"
-              ><AppButton theme="secondary"
-                >See all Product</AppButton
-              ></RouterLink
+              ><AppButton>See all Product</AppButton></RouterLink
             >
           </div>
         </div>
