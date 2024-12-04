@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="`app-button ${disabled && !loading && 'disabled'} ${theme === 'primary' ? 'primary' : 'secondary'}`"
+    :class="`app-button ${disabled && !loading && 'disabled'}`"
     :disabled="disabled || loading"
   >
     <slot></slot>
