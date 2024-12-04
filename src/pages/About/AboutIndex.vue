@@ -102,7 +102,7 @@ const boardOfDirectors = [
   {
     img: AwolesiOluwakemi,
     name: "Mrs Awolesi Oluwakemi",
-    position: "MD",
+    position: "Managing Director",
   },
 ];
 
@@ -110,7 +110,7 @@ const management = [
   {
     img: AwolesiOluwakemi,
     name: "Mrs Awolesi Oluwakemi",
-    position: "MD",
+    position: "Managing Director",
   },
   {
     img: OluwatoyinRufus,
