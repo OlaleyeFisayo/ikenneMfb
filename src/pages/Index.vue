@@ -87,7 +87,6 @@
           <SplideSlide
             v-for="(testimonial, index) in testimonialsOption"
             :key="index"
-            class=""
           >
             <AppCard2
               :label="testimonial.name"
