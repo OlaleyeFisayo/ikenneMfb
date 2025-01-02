@@ -39,7 +39,7 @@
     }
 
     .greeting {
-      color: var(--secondary-blue);
+      color: var(--red);
       font-size: 2rem;
 
       @media (max-width: 560px) {
@@ -55,7 +55,7 @@
       font-size: 4rem;
       max-width: 500px;
       width: 100%;
-      color: var(--text-light);
+      color: var(--green);
 
       @media (max-width: 560px) {
         font-size: 2.5rem;

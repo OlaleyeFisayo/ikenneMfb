@@ -65,12 +65,13 @@
 import SuluKehinde from "../../assets/imgs/DSC_3160.jpg";
 import AwolesiOluwakemi from "../../assets/imgs/DSC_3176.jpg";
 import LanreSotunde from "../../assets/imgs/lanre.jpeg";
-// import OlufemiAllen from "../../assets/imgs/DSC_3208.jpg";
+import OlufemiAllen from "../../assets/imgs/otunba_olufemi.jpeg";
 import AdekunleAdeniyi from "../../assets/imgs/DSC_3165.jpg";
 import GbolahanAdenuga from "../../assets/imgs/DSC_3171.jpg";
 import OluwatoyinRufus from "../../assets/imgs/DSC_3188.jpg";
 import OyegunwaOluwabunmi from "../../assets/imgs/DSC_3236.jpg";
 import AllenRemi from "../../assets/imgs/DSC_3208.jpg";
+import AdenugaAdeleke from "../../assets/imgs/barr_adenuga.jpeg";
 import AppCard4 from "../../components/app-card4.vue";
 
 const boardOfDirectors = [
@@ -80,7 +81,7 @@ const boardOfDirectors = [
     position: "Chairman",
   },
   {
-    // img: OlufemiAllen,
+    img: OlufemiAllen,
     name: "Otunba Olufemi Allen",
     position: "Director",
   },
@@ -111,6 +112,11 @@ const management = [
     img: AwolesiOluwakemi,
     name: "Mrs Awolesi Oluwakemi",
     position: "Managing Director",
+  },
+  {
+    img: AdenugaAdeleke,
+    name: "Barr. Adenuga Adeleke",
+    position: "Company secretary",
   },
   {
     img: OluwatoyinRufus,
