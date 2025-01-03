@@ -7,13 +7,13 @@
     </div>
     <section class="blogs">
       <div class="content">
-        <template v-for="(blog, index) in blogPosts" :key="index">
-          <appBlog
-            :img="blog.img"
-            :title="blog.title"
-            :description="blog.description"
-          />
-        </template>
+        <appBlog
+          v-for="(blog, index) in blogPosts"
+          :img="blog.img"
+          :title="blog.title"
+          :description="blog.description"
+          :key="index"
+        />
       </div>
     </section>
   </section>

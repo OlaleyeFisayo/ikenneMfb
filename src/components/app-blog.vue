@@ -31,12 +31,21 @@ defineProps({
   gap: 1rem;
   cursor: pointer;
 
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+
   .img-side {
     width: 100%;
     max-width: 300px;
     height: 250px;
     border-radius: var(--borderRadius);
     overflow: hidden;
+
+    @media (max-width: 900px) {
+      max-width: 500px;
+      height: 350px;
+    }
 
     img {
       width: 100%;
@@ -50,10 +59,16 @@ defineProps({
     .title {
       font-size: var(--mediumFontSize);
       color: var(--blue3);
+      @media (max-width: 900px) {
+        text-align: center;
+      }
     }
     .description {
       font-size: var(--smallFontSize);
       color: var(--blue3);
+      @media (max-width: 900px) {
+        text-align: center;
+      }
     }
   }
 }

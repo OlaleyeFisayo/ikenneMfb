@@ -3,7 +3,7 @@
     <div class="chat-header">
       <h3>Hey</h3>
       <div role="button" @click="toggleChatBot">
-        <X color="white"/>
+        <X color="white" />
       </div>
     </div>
     <div class="chat-window">
@@ -78,7 +78,7 @@ const sendMessage = () => {
 }
 
 .chatbot-container {
-  max-width:  350px;
+  max-width: 350px;
   width: 100%;
   height: 500px;
   border-radius: var(--borderRadius);
