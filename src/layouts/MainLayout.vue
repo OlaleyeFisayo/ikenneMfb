@@ -135,7 +135,6 @@ import {
   X,
 } from "lucide-vue-next";
 import { ref } from "vue";
-import AppChat from "../components/app-chat.vue";
 
 const menu = ref(false);
 const toggleMenu = () => {
