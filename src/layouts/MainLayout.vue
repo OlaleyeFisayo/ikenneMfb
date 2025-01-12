@@ -117,7 +117,7 @@
         </div>
       </div>
     </footer>
-    <AppChat />
+    <!-- <AppChat /> -->
   </section>
 </template>
 
