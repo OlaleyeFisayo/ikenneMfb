@@ -35,30 +35,30 @@ import AppCard3 from "../../components/app-card3.vue";
 import AppGrid from "../../components/app-grid.vue";
 
 const services = [
-//   {
-//     label: "Target Saving Account (TSA)",
-//     children: [
-//       "Opening of Account",
-//       "Two photograph passports",
-//       "Valid identification Card",
-//       "Attractive Interest rate",
-//       "Account passbook",
-//       "Access to withdrawal on special occasion",
-//       "Bank Verification Number",
-//       "Electricity Bill",
-//     ],
-//   },
-//   {
-//     label: "Dependent Relative Account",
-//     children: [
-//       "Opening of Account",
-//       "Two passport photographs each from the account holder & the recipient",
-//       "COT free",
-//       "Operate through standing order",
-//       "Bank Verification Number",
-//       "Electricity Bill",
-//     ],
-//   },
+  //   {
+  //     label: "Target Saving Account (TSA)",
+  //     children: [
+  //       "Opening of Account",
+  //       "Two photograph passports",
+  //       "Valid identification Card",
+  //       "Attractive Interest rate",
+  //       "Account passbook",
+  //       "Access to withdrawal on special occasion",
+  //       "Bank Verification Number",
+  //       "Electricity Bill",
+  //     ],
+  //   },
+  //   {
+  //     label: "Dependent Relative Account",
+  //     children: [
+  //       "Opening of Account",
+  //       "Two passport photographs each from the account holder & the recipient",
+  //       "COT free",
+  //       "Operate through standing order",
+  //       "Bank Verification Number",
+  //       "Electricity Bill",
+  //     ],
+  //   },
   {
     label: "Ikenne Regular Current Account",
     children: [
@@ -71,14 +71,14 @@ const services = [
       "Bank Verification Number",
     ],
   },
-//   {
-//     label: "Children Saving Account",
-//     children: [
-//       "Opening of Account",
-//       "Benefit of free membership of Ikenne children investment club",
-//       "Free Access to gift etc.",
-//     ],
-//   },
+  //   {
+  //     label: "Children Saving Account",
+  //     children: [
+  //       "Opening of Account",
+  //       "Benefit of free membership of Ikenne children investment club",
+  //       "Free Access to gift etc.",
+  //     ],
+  //   },
   {
     label: "Ereke-Wise Account",
     children: [

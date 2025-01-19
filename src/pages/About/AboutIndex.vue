@@ -105,6 +105,11 @@ const boardOfDirectors = [
     name: "Mrs Awolesi Oluwakemi",
     position: "Managing Director",
   },
+  {
+    img: AdenugaAdeleke,
+    name: "Barr. Adenuga Adeleke",
+    position: "Company secretary",
+  },
 ];
 
 const management = [
@@ -113,11 +118,7 @@ const management = [
     name: "Mrs Awolesi Oluwakemi",
     position: "Managing Director",
   },
-  {
-    img: AdenugaAdeleke,
-    name: "Barr. Adenuga Adeleke",
-    position: "Company secretary",
-  },
+
   {
     img: OluwatoyinRufus,
     name: "Pastor Oluwatoyin Rufus Patrick",
