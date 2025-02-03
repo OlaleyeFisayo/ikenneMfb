@@ -67,7 +67,7 @@
                 :img="staff.img"
                 :name="staff.name"
                 :position="staff.position"
-                :to="staff.to"
+                :to="`about/${staff.to}`"
               />
             </template>
             <template v-else>
