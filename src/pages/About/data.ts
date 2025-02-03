@@ -95,6 +95,7 @@ export const management = [
     img: AwolesiOluwakemi,
     name: "Mrs Awolesi Oluwakemi",
     position: "Managing Director",
+    to: 5,
   },
 
   {

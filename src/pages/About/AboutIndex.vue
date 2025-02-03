@@ -60,13 +60,24 @@
           <div class="line"></div>
         </div>
         <div class="list">
-          <AppCard4
-            v-for="(staff, i) in management"
+            <template v-for="(staff, i) in management>
+            <template v-if="staff.to">
+              <AppCard4
+                :key="i"
+                :img="staff.img"
+                :name="staff.name"
+                :position="staff.position"
+                />
+            </template>
+            <template v-else>
+              <AppCard4
             :key="i"
             :img="staff.img"
             :name="staff.name"
             :position="staff.position"
           />
+            </template>
+          </template>
         </div>
       </div>
     </section>
