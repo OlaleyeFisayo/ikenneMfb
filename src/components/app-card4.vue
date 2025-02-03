@@ -31,7 +31,7 @@ defineProps({
   name: String,
   position: String,
   to: {
-    type: String,
+    type: Number,
     required: false,
   },
 });
