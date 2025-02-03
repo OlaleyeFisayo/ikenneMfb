@@ -1,20 +1,39 @@
 <template>
-  <div class="app-card4">
-    <div class="img-side">
-      <img :src="img" :alt="name" loading="lazy" />
+  <template v-if="to">
+    <RouterLink class="app-card4" :to="to">
+      <div class="img-side">
+        <img :src="img" :alt="name" loading="lazy" />
+      </div>
+      <div class="text-side">
+        <h1>{{ name }}</h1>
+        <p>{{ position }}</p>
+      </div>
+    </RouterLink>
+  </template>
+  <template v-else>
+    <div class="app-card4">
+      <div class="img-side">
+        <img :src="img" :alt="name" loading="lazy" />
+      </div>
+      <div class="text-side">
+        <h1>{{ name }}</h1>
+        <p>{{ position }}</p>
+      </div>
     </div>
-    <div class="text-side">
-      <h1>{{ name }}</h1>
-      <p>{{ position }}</p>
-    </div>
-  </div>
+  </template>
 </template>
 
 <script setup lang="ts">
+import { RouterLink } from "vue-router";
+
 defineProps({
   img: String,
   name: String,
   position: String,
+  to: {
+    type: String,
+    required: false,
+  },
 });
 </script>
 
@@ -26,6 +45,7 @@ defineProps({
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  text-decoration: none;
 
   &:hover {
     transform: scale(1.05);

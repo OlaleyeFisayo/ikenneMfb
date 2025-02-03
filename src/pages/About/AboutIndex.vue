@@ -31,13 +31,25 @@
           <div class="line"></div>
         </div>
         <div class="list">
-          <AppCard4
-            v-for="(boardOfDirector, i) in boardOfDirectors"
-            :key="i"
-            :img="boardOfDirector.img"
-            :name="boardOfDirector.name"
-            :position="boardOfDirector.position"
-          />
+          <template v-for="(boardOfDirector, i) in boardOfDirectors">
+            <template v-if="boardOfDirector.to">
+              <AppCard4
+                :key="i"
+                :img="boardOfDirector.img"
+                :name="boardOfDirector.name"
+                :position="boardOfDirector.position"
+                :to="`about/${boardOfDirector.to}`"
+              />
+            </template>
+            <template v-else>
+              <AppCard4
+                :key="i"
+                :img="boardOfDirector.img"
+                :name="boardOfDirector.name"
+                :position="boardOfDirector.position"
+              />
+            </template>
+          </template>
         </div>
       </div>
     </section>
@@ -62,79 +74,8 @@
 </template>
 
 <script setup lang="ts">
-import SuluKehinde from "../../assets/imgs/DSC_3160.jpg";
-import AwolesiOluwakemi from "../../assets/imgs/DSC_3176.jpg";
-import LanreSotunde from "../../assets/imgs/lanre.jpeg";
-import OlufemiAllen from "../../assets/imgs/otunba_olufemi.jpeg";
-import AdekunleAdeniyi from "../../assets/imgs/DSC_3165.jpg";
-import GbolahanAdenuga from "../../assets/imgs/DSC_3171.jpg";
-import OluwatoyinRufus from "../../assets/imgs/DSC_3188.jpg";
-import OyegunwaOluwabunmi from "../../assets/imgs/DSC_3236.jpg";
-import AllenRemi from "../../assets/imgs/DSC_3208.jpg";
-import AdenugaAdeleke from "../../assets/imgs/barr_adenuga.jpeg";
 import AppCard4 from "../../components/app-card4.vue";
-
-const boardOfDirectors = [
-  {
-    img: SuluKehinde,
-    name: "Mr. Sulu Kehinde",
-    position: "Chairman",
-  },
-  {
-    img: OlufemiAllen,
-    name: "Otunba Olufemi Allen",
-    position: "Director",
-  },
-  {
-    img: LanreSotunde,
-    name: "Mr. Lanre Sotunde",
-    position: "Director",
-  },
-  {
-    img: AdekunleAdeniyi,
-    name: "Barr, Adekunle Adeniyi",
-    position: "Director",
-  },
-  {
-    img: GbolahanAdenuga,
-    name: "Mr. Gbolahan Adenuga",
-    position: "Director",
-  },
-  {
-    img: AwolesiOluwakemi,
-    name: "Mrs Awolesi Oluwakemi",
-    position: "Managing Director",
-  },
-  {
-    img: AdenugaAdeleke,
-    name: "Barr. Adenuga Adeleke",
-    position: "Company secretary",
-  },
-];
-
-const management = [
-  {
-    img: AwolesiOluwakemi,
-    name: "Mrs Awolesi Oluwakemi",
-    position: "Managing Director",
-  },
-
-  {
-    img: OluwatoyinRufus,
-    name: "Pastor Oluwatoyin Rufus Patrick",
-    position: "Internal Auditor",
-  },
-  {
-    img: OyegunwaOluwabunmi,
-    name: "Mrs. Oyegunwa Oluwabunmi Margaret",
-    position: "Head of Operations",
-  },
-  {
-    img: AllenRemi,
-    name: "Mrs. Allen Remi",
-    position: "Head Risk Management/Recovery",
-  },
-];
+import { boardOfDirectors, management } from "./data";
 </script>
 
 <style scoped lang="scss">
