@@ -11,10 +11,15 @@
     <section class="header">
       <div class="content">
         <div class="title">
-          <h1>{{ details?.name }}</h1>
-          <div class="line"></div>
+          <div class="img-side">
+            <img :src="details?.img" :alt="details?.name" loading="lazy" />
+          </div>
         </div>
         <div class="context">
+          <div class="member-details">
+            <h1>{{ details?.name }}</h1>
+            <div class="line"></div>
+          </div>
           <p>
             {{ details?.description }}
           </p>
