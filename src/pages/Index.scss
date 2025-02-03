@@ -53,9 +53,12 @@
 
     .bank-name {
       font-size: 4rem;
-      max-width: 500px;
+      //   max-width: 500px;
       width: 100%;
       color: var(--green);
+      text-decoration: underline;
+      text-decoration-color: var(--red);
+      line-height: auto;
 
       @media (max-width: 560px) {
         font-size: 2.5rem;
@@ -64,6 +67,11 @@
       @media (max-width: 360px) {
         font-size: 1.5rem;
       }
+    }
+    .rc-number {
+      color: var(--red);
+      font-size: var(--smallFontSize);
+      text-decoration: none !important;
     }
 
     .buttons {

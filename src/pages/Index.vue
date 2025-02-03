@@ -3,7 +3,10 @@
     <section class="welcome-section">
       <div class="welcome-content">
         <h2 class="greeting">Welcome to</h2>
-        <h1 class="bank-name">Ikenne Microfinance Bank</h1>
+        <div class="bank-container">
+          <h1 class="bank-name">Ikenne Microfinance Bank</h1>
+          <p class="rc-number">(R.C 232596)</p>
+        </div>
       </div>
     </section>
     <section class="about-section" id="about">
