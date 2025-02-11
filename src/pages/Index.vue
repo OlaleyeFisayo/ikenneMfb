@@ -12,11 +12,7 @@
     <section class="about-section" id="about">
       <div class="content">
         <div class="img-side">
-          <img
-            src="../assets/imgs/DSC_3157.jpg"
-            alt="team photo"
-            loading="lazy"
-          />
+          <AppImg :src="aboutImg" alt="team photo" :smallImg="aboutSmallImg" />
         </div>
         <div class="text-side">
           <h1>Our Bank</h1>
@@ -141,6 +137,9 @@ import {
   Target,
 } from "lucide-vue-next";
 import AppButton from "../components/app-button.vue";
+import AppImg from "../components/app-img.vue";
+import aboutImg from "../assets/imgs/DSC_3157.jpg";
+import aboutSmallImg from "../assets/imgs/DSC_3157-small.jpg";
 
 const testimonialsOption = [
   {
