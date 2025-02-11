@@ -5,7 +5,7 @@
     </p>
     <div class="client-details">
       <div class="img-container">
-        <img :src="img" alt="client's image" loading="lazy" />
+        <AppImg :src="img" :alt="`${clientName} image`" :small-img="smallImg" />
       </div>
       <div class="name">
         <h1>{{ clientName }}</h1>
@@ -15,10 +15,13 @@
 </template>
 
 <script setup lang="ts">
+import AppImg from "./app-img.vue";
+
 defineProps({
   label: String,
   img: String,
   clientName: String,
+  smallImg: String,
 });
 </script>
 

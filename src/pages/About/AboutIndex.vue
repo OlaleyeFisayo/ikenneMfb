@@ -37,6 +37,7 @@
                 :key="i"
                 :img="boardOfDirector.img"
                 :name="boardOfDirector.name"
+                :smallImg="boardOfDirector.smallImg"
                 :position="boardOfDirector.position"
                 :to="`about/${boardOfDirector.to}`"
               />
@@ -45,6 +46,7 @@
               <AppCard4
                 :key="i"
                 :img="boardOfDirector.img"
+                :smallImg="boardOfDirector.smallImg"
                 :name="boardOfDirector.name"
                 :position="boardOfDirector.position"
               />
@@ -66,6 +68,7 @@
                 :key="i"
                 :img="staff.img"
                 :name="staff.name"
+                :smallImg="staff.smallImg"
                 :position="staff.position"
                 :to="`about/${staff.to}`"
               />
@@ -75,6 +78,7 @@
                 :key="i"
                 :img="staff.img"
                 :name="staff.name"
+                :smallImg="staff.smallImg"
                 :position="staff.position"
               />
             </template>

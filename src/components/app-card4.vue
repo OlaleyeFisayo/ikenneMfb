@@ -13,7 +13,7 @@
   <template v-else>
     <div class="app-card4">
       <div class="img-side">
-        <img :src="img" :alt="name" loading="lazy" />
+        <AppImg :src="img" :alt="`${name} image`" :smallImg="smallImg" />
       </div>
       <div class="text-side">
         <h1>{{ name }}</h1>
@@ -25,11 +25,13 @@
 
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
+import AppImg from "./app-img.vue";
 
 defineProps({
   img: String,
   name: String,
   position: String,
+  smallImg: String,
   to: {
     type: String,
     required: false,

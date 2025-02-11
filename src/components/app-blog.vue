@@ -1,7 +1,7 @@
 <template>
   <div class="app-blog">
     <div class="img-side">
-      <img :src="img" :alt="title" loading="lazy" />
+      <AppImg :src="img" :alt="`${title} images`" :smallImg="smallImg" />
     </div>
     <div class="text-side">
       <h1 class="title">{{ title }}</h1>
@@ -11,8 +11,11 @@
 </template>
 
 <script setup lang="ts">
+import AppImg from "./app-img.vue";
+
 defineProps({
   img: String,
+  smallImg: String,
   title: String,
   description: String,
 });

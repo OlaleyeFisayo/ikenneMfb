@@ -77,7 +77,6 @@
     <section class="testimonials">
       <div class="content">
         <h1 class="title">CLIENT TESTIMONIALS</h1>
-
         <Splide :options="testimonialsSliderOptions" class="splide">
           <SplideSlide
             v-for="(testimonial, index) in testimonialsOption"
@@ -87,6 +86,7 @@
               :label="testimonial.name"
               :img="testimonial.img"
               :clientName="testimonial.clientName"
+              :smallImg="testimonial.smallImg"
             />
           </SplideSlide>
         </Splide>
@@ -102,10 +102,10 @@
             class=""
           >
             <div class="img-container">
-              <img
+              <AppImg
                 :src="photo.img"
                 :alt="`slider${index + 1}`"
-                loading="lazy"
+                :smallImg="photo.smallImg"
               />
             </div>
           </SplideSlide>
@@ -119,16 +119,16 @@
 import AppCard from "../components/app-card.vue";
 import AppCard2 from "../components/app-card2.vue";
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
-import slider1 from "../assets/imgs/slider1.jpeg";
-import slider2 from "../assets/imgs/slider2.jpeg";
-import slider3 from "../assets/imgs/slider3.jpeg";
-import slider4 from "../assets/imgs/slider4.jpeg";
-import slider5 from "../assets/imgs/slider5.jpeg";
 import testimonialOne from "../assets/imgs/testimonial-1.jpeg";
+import testimonialOneSmall from "../assets/imgs/testimonial-1-small.jpeg";
 import testimonialTwo from "../assets/imgs/testimonial-2.jpeg";
+import testimonialTwoSmall from "../assets/imgs/testimonial-2.jpeg";
 import testimonialThree from "../assets/imgs/testimonial-3.jpeg";
+import testimonialThreeSmall from "../assets/imgs/testimonial-3-small.jpeg";
 import testimonialFour from "../assets/imgs/testimonial-4.jpeg";
+import testimonialFourSmall from "../assets/imgs/testimonial-4-small.jpeg";
 import testimonialFive from "../assets/imgs/testimonial-5.jpeg";
+import testimonialFiveSmall from "../assets/imgs/testimonial-5-small.jpeg";
 import {
   Briefcase,
   DollarSign,
@@ -140,32 +140,38 @@ import AppButton from "../components/app-button.vue";
 import AppImg from "../components/app-img.vue";
 import aboutImg from "../assets/imgs/DSC_3157.jpg";
 import aboutSmallImg from "../assets/imgs/DSC_3157-small.jpg";
+import { gallarySliderOption, galleryOptions } from "./galleryData";
 
 const testimonialsOption = [
   {
     name: "Getting a loan facility from Ikenne Microfinance Bank was so easy and seamless compared to what is obtainable in other banks. Thank you Ikenne Microfinance Bank team for the excellent job. I will also recommend Ikenne Microfinance Bank to friends and families.",
     img: testimonialOne,
     clientName: "Fisayo",
+    smallImg: testimonialOneSmall,
   },
   {
     name: "The customer service at Ikenne Microfinance Bank is second to none. I was assisted throughout the loan application process and got a quick response. I highly recommend their services.",
     img: testimonialTwo,
     clientName: "Kunle",
+    smallImg: testimonialTwoSmall,
   },
   {
     name: "Ikenne Microfinance Bank made it so easy for me to access funds to expand my small business. Their team was helpful and professional. I am truly grateful.",
     img: testimonialThree,
     clientName: "Adebayo",
+    smallImg: testimonialThreeSmall,
   },
   {
     name: "I was skeptical about microfinance banks, but Ikenne Microfinance Bank changed my perception. Their process was transparent, and the loan terms were fair. Excellent service!",
     img: testimonialFour,
     clientName: "Chioma",
+    smallImg: testimonialFourSmall,
   },
   {
     name: "Ikenne Microfinance Bank offers outstanding financial products and services. Their staff is always friendly, knowledgeable, and eager to help. Highly recommend!",
     img: testimonialFive,
     clientName: "Samuel",
+    smallImg: testimonialFiveSmall,
   },
 ];
 const testimonialsSliderOptions = {
@@ -181,31 +187,6 @@ const testimonialsSliderOptions = {
       perPage: 2,
     },
     700: {
-      perPage: 1,
-    },
-  },
-};
-const galleryOptions = [
-  { img: slider1 },
-  { img: slider2 },
-  { img: slider3 },
-  { img: slider4 },
-  { img: slider5 },
-];
-const gallarySliderOption = {
-  type: "loop",
-  autoplay: true,
-  interval: 2000,
-  perPage: 4,
-  gap: "1rem",
-  breakpoints: {
-    1000: {
-      perPage: 3,
-    },
-    700: {
-      perPage: 2,
-    },
-    400: {
       perPage: 1,
     },
   },
