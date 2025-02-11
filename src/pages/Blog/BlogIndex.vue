@@ -13,6 +13,7 @@
           :title="blog.title"
           :description="blog.description"
           :key="index"
+          :smallImg="blog.smallImg"
         />
       </div>
     </section>
