@@ -64,7 +64,13 @@
         </div>
       </div>
       <div class="right-section">
-        <div class="black-background"></div>
+        <div class="black-background">
+          <AppImg
+            :src="welcomeSlider3"
+            :smallImg="welcomeSlider3Small"
+            alt="Products img"
+          />
+        </div>
         <ul>
           <li><PiggyBank color="#ffc107" /> Savings</li>
           <li><Target color="#ffc107" /> Demand Deposit</li>
@@ -141,6 +147,8 @@ import AppImg from "../components/app-img.vue";
 import aboutImg from "../assets/imgs/DSC_3157.jpg";
 import aboutSmallImg from "../assets/imgs/DSC_3157-small.jpg";
 import { gallarySliderOption, galleryOptions } from "./galleryData";
+import welcomeSlider3 from "../assets/imgs/welcome-slider3.jpg";
+import welcomeSlider3Small from "../assets/imgs/welcome-slider3-small.jpg";
 
 const testimonialsOption = [
   {
