@@ -17,7 +17,7 @@
                 <template v-if="photo.type === 'video'">
                   <video controls>
                     <source
-                      src="../../assets/videos/IMG_4941.MP4"
+                        :src="photo.src"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
