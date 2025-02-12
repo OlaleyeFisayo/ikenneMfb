@@ -17,7 +17,6 @@
               :alt="details?.name"
               :smallImg="details?.smallImg"
             />
-            <img :src="details?.img" :alt="details?.name" loading="lazy" />
           </div>
         </div>
         <div class="context">
