@@ -106,7 +106,7 @@ export const boardOfDirectors = [
   },
   {
     img: AdenugaAdeleke,
-    smallImg: AdekunleAdeniyiSmall,
+    smallImg: AdenugaAdelekeSmall,
     name: "Barr. Adenuga Adeleke",
     position: "Company secretary",
   },
