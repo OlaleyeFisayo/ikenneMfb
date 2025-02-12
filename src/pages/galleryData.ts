@@ -15,6 +15,7 @@ export const galleryOptions = [
   { img: slider3, smallImg: slider3Small },
   { img: slider4, smallImg: slider4Small },
   { img: slider5, smallImg: slider5Small },
+  { type: "video", src: "../../assets/videos/IMG_4941.MP4" },
 ];
 export const gallarySliderOption = {
   type: "loop",

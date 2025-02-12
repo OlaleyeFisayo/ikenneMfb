@@ -14,11 +14,22 @@
               class=""
             >
               <div class="img-container">
-                <AppImg
-                  :src="photo.img"
-                  :alt="`slider${index + 1}`"
-                  :smallImg="photo.smallImg"
-                />
+                <template v-if="photo.type === 'video'">
+                  <video controls>
+                    <source
+                      src="../../assets/videos/IMG_4941.MP4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </template>
+                <template v-else>
+                  <AppImg
+                    :src="photo.img"
+                    :alt="`slider${index + 1}`"
+                    :smallImg="photo.smallImg"
+                  />
+                </template>
               </div>
             </SplideSlide>
           </Splide>
