@@ -12,6 +12,11 @@
       <div class="content">
         <div class="title">
           <div class="img-side">
+            <AppImg
+              :src="details?.img"
+              :alt="details?.name"
+              :smallImg="details?.smallImg"
+            />
             <img :src="details?.img" :alt="details?.name" loading="lazy" />
           </div>
         </div>
@@ -34,6 +39,7 @@ import { computed } from "vue";
 import { BODData } from "../data";
 import { RouterLink, useRoute } from "vue-router";
 import { ArrowRight } from "lucide-vue-next";
+import AppImg from "../../../components/app-img.vue";
 
 const route = useRoute();
 const details = computed(() =>
