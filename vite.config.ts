@@ -4,5 +4,5 @@ import vue from "@vitejs/plugin-vue";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  assetsInclude: ['**/*.MP4', '**/*.mp4']
+  assetsInclude: ["**/*.MP4", "**/*.mp4"],
 });

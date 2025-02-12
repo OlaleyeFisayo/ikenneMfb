@@ -106,10 +106,7 @@
             <div class="img-container">
               <template v-if="photo.type === 'video'">
                 <video controls>
-                  <source
-                    :src="photo.src"
-                    type="video/mp4"
-                  />
+                  <source :src="photo.src" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </template>

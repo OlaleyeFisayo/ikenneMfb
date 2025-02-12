@@ -8,7 +8,7 @@ import slider4 from "../assets/imgs/slider4.jpeg";
 import slider4Small from "../assets/imgs/slider4-small.jpeg";
 import slider5 from "../assets/imgs/slider5.jpeg";
 import slider5Small from "../assets/imgs/slider5-small.jpeg";
-import videoSrc from '../assets/videos/IMG_4941.MP4';
+import videoSrc from "../assets/videos/IMG_4941.MP4";
 
 export const galleryOptions = [
   { img: slider1, smallImg: slider1Small },
