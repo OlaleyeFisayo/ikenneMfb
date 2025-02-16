@@ -4,19 +4,12 @@
       {{ label }}
     </p>
     <div class="client-details">
-      <div class="img-container">
-        <AppImg :src="img" :alt="`${clientName} image`" :small-img="smallImg" />
-      </div>
-      <div class="name">
-        <h1>{{ clientName }}</h1>
-      </div>
+      <h1>{{ clientName }}</h1>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import AppImg from "./app-img.vue";
-
 defineProps({
   label: String,
   img: String,
@@ -38,9 +31,9 @@ defineProps({
   width: 100%;
   height: 100%;
   justify-content: space-between;
+  gap: 2rem;
 
   .text-side {
-    margin-bottom: 1.5rem;
     font-size: var(--smallFontSize);
     position: relative;
 
@@ -64,23 +57,10 @@ defineProps({
   }
 
   .client-details {
-    display: grid;
-    grid-template-columns: 0.2fr 0.8fr;
-    gap: 0.2rem;
-    align-items: center;
-
-    .img-container {
-      width: 65px;
-      height: 65px;
-      overflow: hidden;
-      border-radius: 50%;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
+    text-transform: capitalize;
+    height: auto;
+    width: 100%;
+    text-align: center;
   }
 }
 </style>

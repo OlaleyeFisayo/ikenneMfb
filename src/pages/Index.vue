@@ -89,10 +89,8 @@
             :key="index"
           >
             <AppCard2
-              :label="testimonial.name"
-              :img="testimonial.img"
-              :clientName="testimonial.clientName"
-              :smallImg="testimonial.smallImg"
+              :label="testimonial.testimony"
+              :clientName="testimonial.name"
             />
           </SplideSlide>
         </Splide>
@@ -156,34 +154,59 @@ import welcomeSlider3Small from "../assets/imgs/welcome-slider3-small.jpg";
 
 const testimonialsOption = [
   {
-    name: "Getting a loan facility from Ikenne Microfinance Bank was so easy and seamless compared to what is obtainable in other banks. Thank you Ikenne Microfinance Bank team for the excellent job. I will also recommend Ikenne Microfinance Bank to friends and families.",
-    img: testimonialOne,
-    clientName: "Fisayo",
-    smallImg: testimonialOneSmall,
+    testimony:
+      "Since I started dealing with Ikenne microfinance Bank, I have found the staff very efficient and understanding, they listen to customers issues and try to solve them professionally. The terms and conditions for loans are also very reasonable and interest rates are affordable. The time taken to process a loan application is also short and convenient to customers, I recommend that you open more branches countrywide so that more customers can access your services and products. THANK YOU AND KEEP IT UP.",
+    name: "MRS OLUSANYA OMOTOLA",
   },
   {
-    name: "The customer service at Ikenne Microfinance Bank is second to none. I was assisted throughout the loan application process and got a quick response. I highly recommend their services.",
-    img: testimonialTwo,
-    clientName: "Kunle",
-    smallImg: testimonialTwoSmall,
+    testimony:
+      "I have been your customer for the last three years. I have benefited a lot from your financial assistance. The loan has assisted me sort out some urgent matters. Your interest rate is quite reasonable. Your processing time is also very fast. I really appreciate and feel part of you; I won’t hesitate to recommend you to any other needy person. THANK YOU FOR ALL YOUR SUPPORT.",
+    name: "MR. JIMOH WAHEED",
   },
   {
-    name: "Ikenne Microfinance Bank made it so easy for me to access funds to expand my small business. Their team was helpful and professional. I am truly grateful.",
-    img: testimonialThree,
-    clientName: "Adebayo",
-    smallImg: testimonialThreeSmall,
+    testimony:
+      "Farmer, Agro loan customer, I was able to expand my daily production with the help of a loan from Ikenne Microfinance Bank. The staff was always very supportive in carrying out the process.",
+    name: "MR. POPOOLA ISRAEL",
   },
   {
-    name: "I was skeptical about microfinance banks, but Ikenne Microfinance Bank changed my perception. Their process was transparent, and the loan terms were fair. Excellent service!",
-    img: testimonialFour,
-    clientName: "Chioma",
-    smallImg: testimonialFourSmall,
+    testimony:
+      "Businessman, savings account and current account holder. I was impressed by the solutions provided by the bank in response to the challenges I shared. I prefer Ikenne Microfinance bank over other banks, owing to the mobile banking app upgrading and quick response to mails. He has opened current/savings account for all his staff and finds money transfer and balance enquiry very convenient through the apps.",
+    name: "MR. TUNDE",
   },
   {
-    name: "Ikenne Microfinance Bank offers outstanding financial products and services. Their staff is always friendly, knowledgeable, and eager to help. Highly recommend!",
-    img: testimonialFive,
-    clientName: "Samuel",
-    smallImg: testimonialFiveSmall,
+    testimony:
+      "Business person, MSME loan customer. The Bank’s employee helped me in understanding the loan that lead me to trust the bank. I am very happy with the growth my business made with the help of the loan",
+    name: "MRS. ODUNTAN TITILAYO",
+  },
+  {
+    testimony:
+      "Salary earner loan customer. I am thankful to Ikenne Microfinance Bank in helping to realize my dream of home ownership. Today, I take pride in cooking in my own kitchen, sitting in the midst of landlords. When my colleagues ask me how I was able to make my house in such pace, I recommend them to Ikenne Microfinance Bank NIG.",
+    name: "MR. ADEKOYA ABIODUN",
+  },
+  {
+    testimony:
+      "We won’t exist if Ikenne Microfinance Bank did not help to support us. Anytime we’ve needed money to grow, Ikenne MFB has always stepped up to the plate.",
+    name: "OLABISI DADA, CEO AGBEKE GOD’S GLORY VENTURES",
+  },
+  {
+    testimony:
+      "The Ikenne MFB has been a key partner in our success, and an invaluable asset for the growth and future of our company",
+    name: "TOBAF STONES ENTREPRISES",
+  },
+  {
+    testimony:
+      "Ikenne Microfinance Bank has made it possible for us to progress in our annual trade fair sales. While also helping to finance an empowering scheme for less privelegde. We thank Ikenne MFB for usual support",
+    name: "ABDUL OMOSHALEWA OLANISHILE, MD/CEO ADULEH’S PLACE LTD",
+  },
+  {
+    testimony:
+      "Ikenne MFB worked extensively with me to help me anticipate some of the issues that my business may face. Not many lenders would go to that extent. They have been extremely supportive and a great resource.",
+    name: "ODUNWAYE ADEYINKA, DIRECTOR OF YINKOD BROAD VENTURES",
+  },
+  {
+    testimony:
+      "Ikenne MFB has been incredibly helpful to our company by providing a line of credit for our continued growth.",
+    name: "ALAYO JULORUL SHITA, DIRECTOR OF INFINITY JOY GLOBAL CONCEPT",
   },
 ];
 const testimonialsSliderOptions = {
