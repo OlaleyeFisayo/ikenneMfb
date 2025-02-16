@@ -127,16 +127,6 @@
 import AppCard from "../components/app-card.vue";
 import AppCard2 from "../components/app-card2.vue";
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
-import testimonialOne from "../assets/imgs/testimonial-1.jpeg";
-import testimonialOneSmall from "../assets/imgs/testimonial-1-small.jpeg";
-import testimonialTwo from "../assets/imgs/testimonial-2.jpeg";
-import testimonialTwoSmall from "../assets/imgs/testimonial-2.jpeg";
-import testimonialThree from "../assets/imgs/testimonial-3.jpeg";
-import testimonialThreeSmall from "../assets/imgs/testimonial-3-small.jpeg";
-import testimonialFour from "../assets/imgs/testimonial-4.jpeg";
-import testimonialFourSmall from "../assets/imgs/testimonial-4-small.jpeg";
-import testimonialFive from "../assets/imgs/testimonial-5.jpeg";
-import testimonialFiveSmall from "../assets/imgs/testimonial-5-small.jpeg";
 import {
   Briefcase,
   DollarSign,
