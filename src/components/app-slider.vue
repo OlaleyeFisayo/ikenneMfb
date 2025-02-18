@@ -51,6 +51,7 @@ onUnmounted(() => {
 <style scoped lang="scss">
 .app-slider {
   width: 100%;
+  height: 100%;
   overflow: hidden;
   display: flex;
 
