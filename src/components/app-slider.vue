@@ -2,6 +2,7 @@
   <div class="app-slider">
     <template v-for="(slide, index) in sliderRef" :key="index">
       <img
+        loading="eager"
         :src="slide.image"
         :alt="`slider ${index}`"
         v-if="counter === index"

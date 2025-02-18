@@ -38,6 +38,7 @@ onMounted(() => {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: blur(10px);
 
   img {
     width: 100%;
@@ -51,10 +52,13 @@ onMounted(() => {
     content: "";
     position: absolute;
     inset: 0;
-    filter: blur(10px);
     opacity: 0;
     animation: pulse 2.5s infinite;
     background-color: white;
+  }
+
+  &.loaded {
+    filter: none;
   }
 
   &.loaded::before {
