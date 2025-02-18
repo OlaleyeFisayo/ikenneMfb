@@ -1,4 +1,12 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import Index from "../pages/Index.vue";
+import AboutIndex from "../pages/About/AboutIndex.vue";
+import AboutDetailsIndex from "../pages/About/AboutDetails/AboutDetailsIndex.vue";
+import ServicesIndex from "../pages/Services/ServicesIndex.vue";
+import BlogIndex from "../pages/Blog/BlogIndex.vue";
+import GalleryIndex from "../pages/Gallery/GalleryIndex.vue";
+import ContactIndex from "../pages/Contact/ContactIndex.vue";
+import ResourcesIndex from "../pages/Resources/ResourcesIndex.vue";
 
 const routes: RouteRecordRaw[] = [
   {
@@ -11,43 +19,42 @@ const routes: RouteRecordRaw[] = [
       {
         name: "home",
         path: "",
-        component: () => import("../pages/Index.vue"),
+        component: Index,
       },
       {
         name: "about",
         path: "about",
-        component: () => import("../pages/About/AboutIndex.vue"),
+        component: AboutIndex,
       },
       {
         name: "aboutDetails",
         path: "about/:id",
-        component: () =>
-          import("../pages/About/AboutDetails/AboutDetailsIndex.vue"),
+        component: AboutDetailsIndex,
       },
       {
         name: "services",
         path: "services",
-        component: () => import("../pages/Services/ServicesIndex.vue"),
+        component: ServicesIndex,
       },
       {
         name: "gallery",
         path: "gallery",
-        component: () => import("../pages/Gallery/GalleryIndex.vue"),
+        component: GalleryIndex,
       },
       {
         name: "resources",
         path: "resources",
-        component: () => import("../pages/Resources/ResourcesIndex.vue"),
+        component: ResourcesIndex,
       },
       {
         name: "contact",
         path: "contact",
-        component: () => import("../pages/Contact/ContactIndex.vue"),
+        component: ContactIndex,
       },
       {
         name: "blog",
         path: "blog",
-        component: () => import("../pages/Blog/BlogIndex.vue"),
+        component: BlogIndex,
       },
     ],
   },
