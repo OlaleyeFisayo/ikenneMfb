@@ -145,21 +145,27 @@ import { gallarySliderOption, galleryOptions } from "./galleryData";
 import welcomeSlider3 from "../assets/imgs/welcome-slider3.jpg";
 import welcomeSlider3Small from "../assets/imgs/welcome-slider3-small.jpg";
 import welcomeSlider1 from "../assets/imgs/welcome-slider1.jpg";
+import welcomeSlider1Small from "../assets/imgs/welcome-slider1-small.jpg";
 import welcomeSlider2 from "../assets/imgs/welcome-slider2.jpg";
+import welcomeSlider2Small from "../assets/imgs/welcome-slider2-small.jpg";
 import welcomeSlider4 from "../assets/imgs/resource-img.jpg";
+import welcomeSlider4Small from "../assets/imgs/resource-img-small.jpg";
 import AppSlider from "../components/app-slider.vue";
 
 const sliderOptions = [
   {
     image: welcomeSlider1,
+    smallImg: welcomeSlider1Small,
     isActive: true,
   },
   {
     image: welcomeSlider2,
+    smallImg: welcomeSlider2Small,
     isActive: false,
   },
   {
     image: welcomeSlider4,
+    smallImg: welcomeSlider4Small,
     isActive: false,
   },
 ];

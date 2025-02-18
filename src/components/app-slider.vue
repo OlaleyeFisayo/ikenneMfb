@@ -1,24 +1,30 @@
 <template>
   <div class="app-slider">
-    <template v-for="(slide, index) in sliderRef" :key="index">
-      <img
-        loading="eager"
+    <div
+      class="slider-track"
+      :style="{ transform: `translateX(-${counter * 100}%)` }"
+    >
+      <AppImg
+        class="app-img"
+        v-for="(slide, index) in sliderRef"
+        :key="index"
         :src="slide.image"
+        :smallImg="slide.smallImg"
         :alt="`slider ${index}`"
-        v-if="counter === index"
       />
-    </template>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, PropType, ref } from "vue";
 import { sliderProps } from "../helpers/types";
+import AppImg from "./app-img.vue";
 
 const props = defineProps({
   sliders: {
     type: Array as PropType<sliderProps[]>,
-    default: () => {},
+    default: () => [],
   },
 });
 
@@ -31,7 +37,7 @@ function toggleNextImage() {
   }, 15000);
 }
 
-let intervalId;
+let intervalId: number;
 
 onMounted(() => {
   intervalId = toggleNextImage();
@@ -45,11 +51,18 @@ onUnmounted(() => {
 <style scoped lang="scss">
 .app-slider {
   width: 100%;
+  overflow: hidden;
+  display: flex;
 
-  img {
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .app-img {
     width: 100%;
-    object-position: cover;
-    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
   }
 }
 </style>

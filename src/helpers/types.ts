@@ -5,5 +5,6 @@ export interface FormField {
 
 export interface sliderProps {
   image: string;
+  smallImg: string;
   isActive: boolean;
 }
