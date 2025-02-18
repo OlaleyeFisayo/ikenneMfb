@@ -5,16 +5,16 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 
-const props = defineProps({
-  src: String,
-  alt: String,
-  smallImg: String,
-});
+const props = defineProps<{
+  src: string;
+  alt?: string;
+  smallImg: string;
+}>();
 
 const imgStyleSheet = computed(() => ({
-  backgroundImage: `url(${props.smallImg})`,
+  backgroundImage: props.smallImg ? `url(${props.smallImg})` : "none",
 }));
 
 const blurredImageDiv = ref<HTMLElement | null>(null);
@@ -30,6 +30,10 @@ onMounted(() => {
     img.value?.addEventListener("load", loaded);
   }
 });
+
+onUnmounted(() => {
+  img.value?.removeEventListener("load", loaded);
+});
 </script>
 
 <style lang="scss" scoped>
@@ -39,6 +43,7 @@ onMounted(() => {
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(10px);
+  position: relative;
 
   img {
     width: 100%;
