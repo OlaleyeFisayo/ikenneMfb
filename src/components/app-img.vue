@@ -7,11 +7,14 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from "vue";
 
-const props = defineProps<{
-  src: string;
-  alt?: string;
-  smallImg: string;
-}>();
+const props = defineProps({
+  src: String,
+  alt: {
+    type: String,
+    required: false,
+  },
+  smallImg: String,
+});
 
 const imgStyleSheet = computed(() => ({
   backgroundImage: props.smallImg ? `url(${props.smallImg})` : "none",
