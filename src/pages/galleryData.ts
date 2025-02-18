@@ -32,10 +32,10 @@ export const gallarySliderOption = {
     1000: {
       perPage: 3,
     },
-    700: {
+    800: {
       perPage: 2,
     },
-    400: {
+    600: {
       perPage: 1,
     },
   },

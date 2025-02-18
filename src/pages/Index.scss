@@ -16,13 +16,13 @@
 .welcome-section {
   width: 100%;
   padding: 2rem;
-  background-image: url("../assets/imgs/welcome-slider1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-  z-index: -1;
-  animation: slider 16s infinite;
+
+  .img-bg {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+  }
 
   .welcome-content {
     max-width: 1440px;
