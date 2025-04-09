@@ -10,7 +10,7 @@
           <p class="email">Company Email: admin@ikennemfb.com</p>
           <p class="p-number">
             Contact Details:
-            <span class="value">09044331665, kingshak@ikennemfb.com</span>
+            <span class="value">07050536077, kingshak@ikennemfb.com</span>
           </p>
         </div>
       </div>
@@ -38,9 +38,7 @@
             v-for="form in formValue"
             :key="form.tag"
             :placeholder="form.placeholder"
-            :value="form.value"
             v-model="form.value"
-            :name="form.tag"
             :type="form.type"
           />
           <AppButton :disabled="isMessageFromComplete">Send Message</AppButton>
@@ -68,7 +66,14 @@ const customerSupportReps = [
   },
 ];
 
-const formValue = ref([
+const formValue = ref<
+  {
+    placeholder: string;
+    tag: string;
+    value: string | null | number;
+    type?: string;
+  }[]
+>([
   {
     placeholder: "Name*",
     tag: "name",

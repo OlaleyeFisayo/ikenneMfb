@@ -2,7 +2,7 @@
   <template v-if="type === 'textarea'">
     <textarea
       :placeholder="placeholder"
-      v-model="modelValue"
+      v-model="model"
       :name="tag"
       rows="10"
     ></textarea>
@@ -14,7 +14,7 @@
         :type="type"
         :name="tag"
         :placeholder="placeholder"
-        v-model="modelValue"
+        v-model="model"
       />
       <slot name="right-icon"></slot>
     </div>
@@ -22,9 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { PropType, ref, watch } from "vue";
-
-const props = defineProps({
+defineProps({
   type: {
     type: String,
     default: "text",
@@ -37,23 +35,9 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  value: {
-    type: [String, Number, Array] as PropType<
-      string | number | any[] | null | undefined
-    >,
-    default: null,
-  },
 });
 
-const emit = defineEmits(["update:model-value"]);
-const modelValue = ref(props.value);
-
-watch(
-  () => modelValue.value,
-  (n) => {
-    emit("update:model-value", n);
-  },
-);
+const model = defineModel<string | number | undefined | null>();
 </script>
 
 <style scoped lang="scss">

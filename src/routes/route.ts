@@ -64,11 +64,11 @@ export const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if(savedPosition) {
-        console.log(to, from)
-        return savedPosition
+    if (savedPosition) {
+      console.log(to, from);
+      return savedPosition;
     } else {
-        return { top: 0, behavior: 'smooth' }
+      return { top: 0, behavior: "smooth" };
     }
-  }
+  },
 });

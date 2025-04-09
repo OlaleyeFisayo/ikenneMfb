@@ -58,7 +58,7 @@
             </p>
             <p>
               <Phone color="#ffc107" :width="15" :height="15" />
-              09044331665, kingshak@ikennemfb.com
+              07050536077, kingshak@ikennemfb.com
             </p>
             <p>
               <Mail color="#ffc107" :width="15" :height="15" />

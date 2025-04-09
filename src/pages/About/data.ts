@@ -60,6 +60,14 @@ export const BODData = [
     description:
       "Awolesi Oluwakemi Funmilayo is a highly experienced banking professional with over 20 years of experience in various roles at Ikenne Micro-Finance Bank Nig. Ltd. She has a strong background in credit management, risk management, marketing, and operations. Currently, she serves as the Managing Director/CEO of the bank, overseeing its operations and driving its strategic objectives. She works in an organization that is committed to a business strategy which focuses on excellence and offers outstanding challenges as well as prospects for career growth and development.",
   },
+  {
+    id: 6,
+    img: OlufemiAllen,
+    smallImg: OlufemiAllenSmall,
+    name: "Otunba Olufemi Allen",
+    description:
+      "Olufemi Allen, a Nigerian Chartered Accountant and Tax Expert born in Lagos on May 27, 1964, has built a distinguished career spanning over three decades in public finance, auditing, and governance. With a First Class Bachelor of Laws degree from Crescent University and dual fellowships from the Institute of Chartered Accountants of Nigeria (FCA) and the Chartered Institute of Taxation of Nigeria (FCTI), he combines legal acumen with financial expertise. Allen’s professional journey began in 1984 as an Audit Trainee, eventually ascending to leadership roles such as Managing Partner of his accounting firm and CEO of multiple consultancies, where he spearheaded tax compliance strategies and forensic audits for major clients, including multinational corporations like Mobil Oil Nigeria Plc.  As Senior Special Assistant to the Ogun State Governor (2011–2015), he revolutionized revenue generation, increasing monthly PAYE contributions from Local Governments from under ₦10 million to over ₦80 million and boosting civil service revenue to ₦500 million monthly through rigorous tax audits. A key political figure in the All Progressives Congress, Allen has advised governors on taxation, led election control rooms, and championed initiatives like the Ogun State Residency Rule Committee to reclaim revenue from cross-border workers. His federal contributions include forensic audits of academic unions and public institutions, underscoring his commitment to fiscal transparency. Privately, he remains a sought-after consultant, balancing his roles as a tax strategist, educator, and advocate for equitable revenue poilities",
+  },
 ];
 
 export const boardOfDirectors = [
@@ -75,6 +83,7 @@ export const boardOfDirectors = [
     smallImg: OlufemiAllenSmall,
     name: "Otunba Olufemi Allen",
     position: "Director",
+    to: 6,
   },
   {
     img: LanreSotunde,
