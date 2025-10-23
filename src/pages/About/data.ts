@@ -42,7 +42,7 @@ export const BODData = [
     smallImg: GbolahanAdenugaSmall,
     name: "Gbolahan Adenuga",
     description:
-      "Gbolahan Adenuga is a results-oriented and service-driven professional with a passion for leading dynamic teams and achieving meaningful objectives. He has over a decade of experience in managing business operations and has a proven track record of success in both team leadership and profit-oriented cost control. He is a Nigerian lawyer with over 20 years of experience in the legal field. He holds a Bachelor of Laws (LLB) from the Ogun State University and was called to the Nigerian Bar in 2000. With a strong background in telecommunications law, he possesses excellent communication, organizational, and management skills.",
+      "Gbolahan Adenuga is a highly experienced, result-oriented Managing Director passionate about dynamic teams and focused on profit and cost control. He currently leads Premier Standard Industrial Ltd, overseeing nationwide operations across 12 administrative staff and 9 branches, driving market expansion and product development (including fish and poultry feed brands). Academically, he holds a Master's in Business Administration (MBA) from Lancaster University and a Master's in Pharmacy (MPharm) from the University of Brighton, UK. He is a qualified member of the Royal Pharmaceutical Council UK and a Member of the Institute of Directors. He enjoys reading and travelling.",
   },
   {
     id: 4,
@@ -66,8 +66,15 @@ export const BODData = [
     smallImg: OlufemiAllenSmall,
     name: "Otunba Olufemi Allen",
     description:
-      "Olufemi Allen, a Nigerian Chartered Accountant and Tax Expert born in Lagos on May 27, 1964, has built a distinguished career spanning over three decades in public finance, auditing, and governance. With a First Class Bachelor of Laws degree from Crescent University and dual fellowships from the Institute of Chartered Accountants of Nigeria (FCA) and the Chartered Institute of Taxation of Nigeria (FCTI), he combines legal acumen with financial expertise. Allen’s professional journey began in 1984 as an Audit Trainee, eventually ascending to leadership roles such as Managing Partner of his accounting firm and CEO of multiple consultancies, where he spearheaded tax compliance strategies and forensic audits for major clients, including multinational corporations like Mobil Oil Nigeria Plc.  As Senior Special Assistant to the Ogun State Governor (2011–2015), he revolutionized revenue generation, increasing monthly PAYE contributions from Local Governments from under ₦10 million to over ₦80 million and boosting civil service revenue to ₦500 million monthly through rigorous tax audits. A key political figure in the All Progressives Congress, Allen has advised governors on taxation, led election control rooms, and championed initiatives like the Ogun State Residency Rule Committee to reclaim revenue from cross-border workers. His federal contributions include forensic audits of academic unions and public institutions, underscoring his commitment to fiscal transparency. Privately, he remains a sought-after consultant, balancing his roles as a tax strategist, educator, and advocate for equitable revenue poilities",
+      "Olufemi Allen, a Nigerian Chartered Accountant and Tax Expert born in Lagos on May 27, 1964, has built a distinguished career spanning over three decades in public finance, auditing, and governance. With a First Class Bachelor of Laws degree from Crescent University and dual fellowships from the Institute of Chartered Accountants of Nigeria (FCA) and the Chartered Institute of Taxation of Nigeria (FCTI), he combines legal acumen with financial expertise. Allen's professional journey began in 1984 as an Audit Trainee, eventually ascending to leadership roles such as Managing Partner of his accounting firm and CEO of multiple consultancies, where he spearheaded tax compliance strategies and forensic audits for major clients, including multinational corporations like Mobil Oil Nigeria Plc.  As Senior Special Assistant to the Ogun State Governor (2011-2015), he revolutionized revenue generation, increasing monthly PAYE contributions from Local Governments from under ₦10 million to over ₦80 million and boosting civil service revenue to ₦500 million monthly through rigorous tax audits. A key political figure in the All Progressives Congress, Allen has advised governors on taxation, led election control rooms, and championed initiatives like the Ogun State Residency Rule Committee to reclaim revenue from cross-border workers. His federal contributions include forensic audits of academic unions and public institutions, underscoring his commitment to fiscal transparency. Privately, he remains a sought-after consultant, balancing his roles as a tax strategist, educator, and advocate for equitable revenue poilities",
   },
+  {
+    id: 7,
+    img: AdenugaAdeleke,
+    smallImg: AdenugaAdelekeSmall,
+    name: "Barr. Adenuga Adeleke",
+    description: "Adenuga Adeleke Oluwasegun is a highly skilled and dedicated legal professional with an LLB HONS from Ogun State University and a B.L. from the Nigerian Law School, Abuja. His career spans from 1999 to the present, encompassing roles as a Legal Practitioner & Solicitor at firms including Leke Adenuga & Co., Gabriel Chambers, Achike King & Associates, and Alliance Legal, as well as working experience with the Office of the Honourable Commissioner and during his NYSC. Proficient in communication, organizational, and management abilities, he is seeking a professional role in the telecommunication industry."
+  }
 ];
 
 export const boardOfDirectors = [
@@ -118,6 +125,7 @@ export const boardOfDirectors = [
     smallImg: AdenugaAdelekeSmall,
     name: "Barr. Adenuga Adeleke",
     position: "Company secretary",
+    to: 7,
   },
 ];
 
